@@ -630,7 +630,7 @@ margin-left: 18px;
 
 .logo-banner {
 position: absolute;
-top: -44%;
+top: -56%;
 left: -30%;
 width: 150%;
 height: auto;
@@ -657,5 +657,12 @@ margin-left: 0px;
 
 .fal-title{
 font-size: 37px;
+}
+}
+
+@media only screen and (max-width: 414px) {
+.logo-banner {
+    position: absolute;
+    top: -41%;
 }
 }
