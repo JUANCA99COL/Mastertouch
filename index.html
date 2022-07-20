@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mastertouch</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- animations  -->
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+<!-- jquery -->
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<!-- font awesome  -->
+<script src="https://kit.fontawesome.com/442c3c1532.js" crossorigin="anonymous"></script>
+<!-- bootstrap  -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<!-- own style  -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- nav  -->
+<div class="row home-nav">
+    <ul class="p-2 col-7">
+        <li>
+            <a href="index.html"><img class="logo" src="img/no-bg.png" alt=""></a>
+        </li>
+    </ul>
+    <ul class="p-2 col-5">
+        <li class="li-abt">
+            <a href="#eventos">EVENTOS</a>
+        </li>
+        <li class="li-abt">
+            <a href="#services">SERVICIOS</a>
+        </li>
+        <li class="li-abt">
+            <a href="#quienes">QUIENES SOMOS</a>
+        </li>
+        <li class="li-abt">
+            <a href="#contacto">CONTACTO</a>
+        </li>
+        <li class="menu-position">
+            <div id="burger" class="menu-btn mt-2">
+                <div class="menu-btn__burger"></div>
+            </div>
+        </li>
+    </ul>
+    </div>
+    <div id="box1" class="sec-nav">
+        <ul>
+          <li><a href="#eventos">EVENTOS</a></li>
+          <li><a href="#services">SERVICIOS</a></li>
+          <li><a href="#quienes">QUIENES SOMOS</a></li>
+          <li><a href="#contacto">CONTACTO</a></li>
+        </ul>
+      </div>
+    <section id="banner">
+        <div class="content">
+            <img class="logo-banner" src="img/whitenobg-logo.png" alt="">
+            <h2 class="titulo-banner text-center font-weight-bold text-white">NACIMOS PARA VIAJAR</h2>
+            <a href="#eventos"><button class="button-banner text-white m-auto d-block">RESERVAR TOUR</button></a>
+            <a href="#eventos"><i class="arrow-banner text-white fa-solid fa-angle-down"></i></a>
+        </div>
+    </section>
+    <section id="services">
+        <div class="row">
+            <div class="guide col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <div class="serv-content text-white text-center">
+                    <h1>GUIANZA</h1>
+                    <p>Mastertouch es una empresa comprometida en transportar, guiar y asesorar al cliente con calidad, en forma oportuna.</p>
+                </div>
+            </div>
+            <div class="transfer col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <div class="serv-content text-white text-center">
+                    <h1>TRANSLADOS</h1>
+                    <p>Te recogemos en el aeropuerto y te dejamos direcamtente en el hotel y viceversa.
+                        Servicio rapido y efectivo.
+                    </p>
+                </div>
+            </div>
+            <div class="ecotour col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <div class="serv-content text-white text-center">
+                    <h1>ECOTOURS</h1>
+                    <p>Te llevaremos a visitar lugares para disfrutar de la naturaleza y cultura colombiana</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="eventos">
+        <h1 class="text-center mb-5 font-weight-bold">EVENTOS</h1>
+        <div class="row text-center">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <img class="img-thumbnail" src="img/tour-europa.jpg" alt="">
+                <h2>Tour a Europa en Primavera</h2>
+                <a href="tourEuropa.html"><button class="btn-detalles">Detalles</button></a>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <img class="img-thumbnail" src="img/volcanes.jpg" alt="">
+                <h2>Ecotour termales los volcanes</h2>
+                <a href="EcotourTermales.html"><button class="btn-detalles">Detalles</button></a>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <img class="img-thumbnail" src="img/villa-de-leyva.jpg" alt="">
+                <h2>Estancia y ecotour en Villa de Leyva</h2>
+                <a href="VillaDeLeyva.html"><button class="btn-detalles">Detalles</button></a>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <img class="img-thumbnail" src="img/mutis.jpg" alt="">
+                <h2>Jardin Botanico Sabio Mutis</h2>
+                <a href="JardinMutis.html"><button class="btn-detalles">Detalles</button></a>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <img class="img-thumbnail" src="img/cactus.jpg" alt="">
+                <h2>Ecotour Cactus y Suculentas</h2>
+                <a href="cactus.html"><button class="btn-detalles">Detalles</button></a>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <img class="img-thumbnail" src="img/coibris.jpg" alt="">
+                <h2>Ecotour al Templo de los Colibries</h2>
+                <a href="colibries.html"><button class="btn-detalles">Detalles</button></a>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <img class="img-thumbnail" src="img/bogota.jpg" alt="">
+                <h2>Tour a la Antigua Bogota</h2>
+                <a href="antiguaBogota.html"><button class="btn-detalles">Detalles</button></a>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <img class="img-thumbnail" src="img/sumapaz.jpg" alt="">
+                <h2>Ecotour Paramo Sumapaz</h2>
+                <a href="EcotourParamo.html"><button class="btn-detalles">Detalles</button></a>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <img class="img-thumbnail" src="img/dragon.jpg" alt="">
+                <h2>Ecotour Brilla Colombia</h2>
+                <a href="brillaColombia.html"><button class="btn-detalles">Detalles</button></a>
+            </div>
+        </div>
+    </section>
+    <section id="quienes" class="border border-dager">
+        <div class="quien-banner">
+            <h1 class="quien-title text-white">QUIENES SOMOS</h1>
+            <div class="row quienes-content">
+                <div class="quien-icons col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                    <img class="img-thumbnail" src="img/thumbs-up.png" alt="">
+                    <h3 class="p-2 mt-2">CONFIANZA</h3>
+                </div>
+                <div class="quien-icons col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                    <img class="img-thumbnail" src="img/icons8-tick-box-50.png" alt="">
+                    <h3 class="p-2 mt-2">SEGURIDAD</h3>
+                </div>
+                <div class="quien-icons col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                    <img class="img-thumbnail" src="img/icons8-heart-50.png" alt="">
+                    <h3 class="p-2 mt-2">PASION</h3>
+                </div>
+            </div>
+        </div>
+        <div class="text-center m-2 p-2">
+            <p class="quien-para p-5">
+                Mastertouch es una empresa comprometida en transportar, guiar y asesorar al cliente con calidad, en forma oportuna, proporcionándole un alto nivel de satisfacción en el servicio, contando con un grupo humano capacitado y altamente comprometido para lograr los objetivos de nuestra gestión a través de procesos de mejoramiento continuo y creación de valores.                
+                Contamos con excelentes vehículos climatizados, automóviles  y vans. Nuestra amplia experiencia en el sector nos permite garantizar un excelente servicio.
+                <br> <br>
+                Somos apasionados por viajar y brindar experiencias inolvidables, llevamos a ciudadanos y turistas a conocer la cultura colombiana y la gran mesa. Tenemos una gran cercania con la espiritualidad y la naturaleza. Por lo tanto 
+                damos espacios para la meditacion en templos alrededor de Colombia. Nuestros planes incluyen eco tours, caminatas, exhibiciones y lugares iconicos 
+                que no se pueden perder.
+                <br><br>
+                Estamos mas que felices por mostrarte lo maravillosa que Colombia puede ser.
+                <br>
+                No dudes en contactarnos o llamarnos si necesitas asistencia.
+                <br><br>
+                Atentamente Mastertouch | Nacimos para viajar
+            </p>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <div class="slideshow-container ">
+                <div class="mySlides fade">                
+                <img src="img/quienes-1.jpg" style="width:100%">                
+                </div>                
+                <div class="mySlides fade">
+                <img src="img/quienes-3.jpg" style="width:100%">
+                </div> 
+                <div class="mySlides fade">
+                <img src="img/quiens-1.jpeg" style="width:100%">
+                </div> 
+                <div class="mySlides fade">
+                <img src="img/quiens-2.jpeg" style="width:100%">
+                </div> 
+                <div class="mySlides fade">
+                <img src="img/quiens-7.jpeg" style="width:100%">
+                </div> 
+                
+                <div class="text-center p-3">                    
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- id="contacto" -->
+    <section id="contacto">
+        <h1 class="text-center text-white">CONTACTO</h1>
+            <!-- <form class="myForm p-5" id="section-2" action="https://formsubmit.co/40dd3d45641d3ba44879cd0a6337289a" method="POST"> -->
+            <form class="myForm p-5" id="section-2" action="https://formsubmit.co/raulcaro99@gmail.com" method="POST">    
+            <div class="mb-3 frm-w">
+                <label for="exampleInputEmail1" class="form-label">Nombre / First Name</label>
+                <input type="text" name="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3 frm-w">
+                <label for="exampleInputEmail1" class="form-label">Correo / Email address</label>
+                <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                <div id="emailHelp" class="text-white form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3 frm-w">
+                <label for="validationTextarea" class="form-label">Mensaje / message</label>
+                <textarea name="message" class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea" required></textarea>
+                <div class="invalid-feedback">
+                    Please enter a message in the textarea.
+                </div>
+            </div>
+            <button type="submit" class="sn-bu btn btn-primary" value="Send Form">Enviar / Send</button>
+            <!-- <input type="hidden" name="_next" value="https://juanca99col.github.io/portfolio-repo/thankyou.html">                                                                                    -->
+            <input type="hidden" name="_subject" value="New submission!">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_autoresponse" value="Gracias por contactarnos, revisaremos tu solicitud y pronto te contactaremos.">
+        </form>
+    </section>
+    <section id="footer">
+        <div class="mt-5 m-auto d-block text-center">
+            <div class="footer-socials">
+                <p>RESERVAS LLAMAR AL 3153964259</p>
+                <p class="text-center">SIGUENOS EN NUESTRAS REDES SOCIALES!</p>
+                <br>
+                <a href="https://www.facebook.com/raul.caro.334"><img src="img/facebook-brands.svg" alt=""></a>
+                <a href="https://www.instagram.com/raulcaro99/"><img src="img/instagram-brands.svg" alt=""></a>
+                <a href="https://twitter.com/raulcaro99"><img src="img/twitter-square-brands.svg" alt=""></a>
+            </div>
+            <p class="m-auto d-block credentials mt-5 p-2 m-2">© 2022 MASTERTOUCH AGENCIA DE TRANSPORTES TERRESTRES</p>
+        </div>
+    </section>       
+<!-- jquery -->
+<script
+src="https://code.jquery.com/jquery-3.5.1.min.js"
+integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+crossorigin="anonymous"></script>
+<!-- own script  -->
+<script src="js/script.js"></script>
+<!-- bootstrap  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>
