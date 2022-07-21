@@ -146,21 +146,22 @@ position: relative;
 margin: 10%;
 }
 
+/* #wa-box {
+    position: sticky;
+    top: 0;
+    height: 40px;
+}
+
+.whatsap-icon {
+    width: 10%;
+    height: auto;
+} */
+
 .villa-content {
 position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
-}
-
-.whatsapp-icon {
-/* position: absolute;
-bottom: -34%;
-right: -40%; */
-width: 70px;
-height: 60px;
-position: fixed;
-/* z-index: 20; */
 }
 
 /* slideshow  */
@@ -527,6 +528,7 @@ background-color: black;
 opacity: 0.8;
 outline: none;
 border: 1px solid black;
+color: white;
 }
 
 .credentials {
@@ -581,9 +583,9 @@ display: block;
 }
 
 @media only screen and (max-width: 964px) {
-#contacto h1 {
+/* #contacto h1 {
 margin-left: -45px;
-}
+} */
 
 #gallery h1 {
     font-size: 37px;
