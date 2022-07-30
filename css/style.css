@@ -28,6 +28,21 @@ a {
 text-decoration: none;
 }
 
+.iframe-container {
+position: relative;
+width: 100%;
+padding-bottom: 56.25%;
+height: 0;
+}
+
+.iframe-container iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
 #eventos {
 margin: 10%;
 }
@@ -146,6 +161,12 @@ position: relative;
 margin: 10%;
 }
 
+#we-colombia {
+width: 100%;
+height: auto;
+position: relative;  
+}
+
 /* #wa-box {
     position: sticky;
     top: 0;
@@ -156,6 +177,15 @@ margin: 10%;
     width: 10%;
     height: auto;
 } */
+
+.contact-title {
+    padding-top: 94px;
+}
+
+.btn-story {
+    width: 180px;
+    height: auto;
+}
 
 .villa-content {
 position: absolute;
@@ -659,30 +689,47 @@ font-size: 37px;
 }
 
 @media only screen and (max-width: 820px) { 
-    .transfer h1, 
-    .ecotour h1 {
-        font-size: 35px;
-        padding: 20px;
-    }
-
-    .guide h1 {
-        font-size: 35px;
-        padding: 20px;
-        margin-top: 62px;
-    }
-
-    .footer-socials img {
-        width: 4%;
-    }
+.transfer h1, 
+.ecotour h1 {
+    font-size: 35px;
+    padding: 20px;
 }
 
-@media only screen and (max-width: 414px) {
-.logo-banner {
-    position: absolute;
-    top: -41%;
+.guide h1 {
+    font-size: 35px;
+    padding: 20px;
+    margin-top: 62px;
 }
 
 .footer-socials img {
-    width: 6%;
+    width: 4%;
+}
+
+.contact-title {
+    padding-bottom: 0px;
+    padding-top: 105px;
+}
+}
+
+@media only screen and (max-width: 414px) {
+h1 {
+font-size: 40px;
+}
+
+.logo-banner {
+position: absolute;
+top: -41%;
+}
+
+.footer-socials img {
+width: 6%;
+}
+
+.iframe-container {
+height: 600px;
+}
+
+.iframe-container iframe {
+height: 600px;
 }
 }
