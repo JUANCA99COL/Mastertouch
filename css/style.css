@@ -28,21 +28,6 @@ a {
 text-decoration: none;
 }
 
-.iframe-container {
-position: relative;
-width: 100%;
-padding-bottom: 56.25%;
-height: 0;
-}
-
-.iframe-container iframe {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-}
-
 #eventos {
 margin: 10%;
 }
@@ -177,6 +162,16 @@ height: 500px;
 position: relative;  
 }
 
+#suezia-banner {
+background-image: url("../img/banner-3-lajas.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+width: 100%;
+height: 500px;
+position: relative;  
+}
+
 #bonsai-banner {
 background-image: url("../img/dark-bonsai-1.png");
 background-repeat: no-repeat;
@@ -197,29 +192,41 @@ height: auto;
 position: relative;  
 }
 
-/* #wa-box {
-    position: sticky;
-    top: 0;
-    height: 40px;
+.sticky {
+position: fixed;
+top: 87%;
+left: 92%;
+z-index: 30;
+cursor: pointer;
 }
 
-.whatsap-icon {
-    width: 10%;
-    height: auto;
-} */
+.sticky:hover {
+animation: bounce; /* referring directly to the animation's @keyframe declaration */
+animation-duration: 1s; /* don't forget to set a duration! */
+}
 
-/* .img-thumbnail {
-    width: 350px;
-    height: 210px;
-} */
+.iframe-container {
+position: relative;
+width: 100%;
+padding-bottom: 56.25%;
+height: 0;
+}
+
+.iframe-container iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
 
 .contact-title {
-    padding-top: 94px;
+padding-top: 94px;
 }
 
 .btn-story {
-    width: 180px;
-    height: auto;
+width: 180px;
+height: auto;
 }
 
 .villa-content {
@@ -742,6 +749,12 @@ font-size: 37px;
 .contact-title {
     padding-bottom: 0px;
     padding-top: 105px;
+}
+}
+
+@media only screen and (max-width: 675px) {
+.sticky {
+    left: 84%;
 }
 }
 
