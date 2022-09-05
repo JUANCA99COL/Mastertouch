@@ -192,6 +192,16 @@ height: auto;
 position: relative;  
 }
 
+.video-conatiner {
+    padding: 10px;
+    margin: 10px;
+}
+
+video {
+    margin: 30px auto;
+    display: block;
+}
+
 .sticky {
 position: fixed;
 top: 87%;
@@ -778,5 +788,9 @@ height: 600px;
 
 .iframe-container iframe {
 height: 600px;
+}
+
+video {
+    margin-left: -68px;
 }
 }
