@@ -1,9 +1,6 @@
-console.log('hello');
 // jquery functions 
 $(".sec-nav").hide();
 $( document ).ready(function() {
-    console.log( "ready!" );
-
 $(".menu-btn").click(function(){
     $(".sec-nav").fadeToggle();
 });
@@ -49,4 +46,10 @@ for (i = 0; i < dots.length; i++) {
 slides[slideIndex-1].style.display = "block";  
 dots[slideIndex-1].className += " active";
 setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+
+// trasnlations 
+function loadGoogleTranslate(){
+  new google.translate.TranslateElement (
+      "google_element");
 }
