@@ -357,6 +357,8 @@ padding: 20px;
 background: white;
 width: 100%;
 height: 108px !important;
+/* position: fixed; */
+/* z-index: 30; */
 }
 
 .home-nav li{
@@ -426,17 +428,6 @@ background-position: center center;
 height: 700px;
 position: relative;
 }
-
-/* .guide, 
-.transfer,
-.ecotour { 
-filter: grayscale(100%); transition: filter .3s ease-in-out;
-cursor: pointer;
-}
-
-.guide:hover,
-.transfer:hover,
-.ecotour:hover { filter: none;} */
 
 .transfer {
 background-image: url("../img/dark-tras.png");
