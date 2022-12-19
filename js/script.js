@@ -26,7 +26,6 @@ function loadGoogleTranslate(){
       "google_element");
 }
 
-
 // Two images side by side
 function two() {
   for (i = 0; i < elements.length; i++) {
