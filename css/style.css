@@ -245,11 +245,6 @@ cursor: pointer;
 text-transform: uppercase;
 }
 
-.video-conatiner {
-padding: 10px;
-margin: 10px;
-}
-
 video {
 margin: 30px auto;
 display: block;
