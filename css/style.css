@@ -604,7 +604,7 @@ width: 70%;
 }
 
 .footer-socials {
-margin: 10px;
+margin: 50px;
 }
 
 .footer-socials img {
@@ -749,7 +749,7 @@ top: -41%;
 }
 
 .footer-socials img {
-width: 6%;
+width: 8%;
 }
 
 .iframe-container {
@@ -759,8 +759,4 @@ height: 600px;
 .iframe-container iframe {
 height: 600px;
 }
-
-/* video {
-margin-left: -68px;
-} */
 }
