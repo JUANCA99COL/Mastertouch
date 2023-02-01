@@ -216,6 +216,11 @@ position: relative;
 margin: 2%;
 }
 
+.europe-img img{
+    width: 100%;
+    height: auto;
+}
+
 .v-nature {
 position: relative;
 width: 100%;
