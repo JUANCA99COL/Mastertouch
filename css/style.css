@@ -226,9 +226,22 @@ position: relative;
 margin: 2%;
 }
 
+.thanks-message {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.thanks-message p {
+margin-top: -30px;
+margin-bottom: 30px;
+font-size: 20px;
+}
+
 .europe-img img{
-    width: 100%;
-    height: auto;
+width: 100%;
+height: auto;
 }
 
 .v-nature {
@@ -312,6 +325,8 @@ transform: translate(-50%, -50%);
 /* slideshow events */
 .gallery-line {
 display: flex;
+/* align-items: center; */
+justify-content: center;
 flex-wrap: wrap;
 padding: 0 4px;
 }
@@ -324,7 +339,6 @@ padding: 0 4px;
 
 .column img {
 margin-top: 8px;
-margin-left: 110px;
 vertical-align: middle;
 width: 100%;
 }
@@ -334,7 +348,7 @@ width: 100%;
 padding: 20px;
 background: white;
 width: 100%;
-height: 108px !important;
+height: 108px;
 /* position: fixed; */
 /* z-index: 30; */
 }
@@ -637,7 +651,150 @@ animation: headShake;
 animation-duration: 1s;
 }
 
-/* media quaries  */
+/* DESKTOP  */
+/* Extra large devices (large laptops and desktops, 2500 and up) */
+@media only screen and (min-width: 2500px) {
+#suezia-banner{
+height: 914px;
+}
+
+#banner {
+height: 914px;
+}
+
+#contacto {
+height: 1100px;
+}
+
+#bari-banner {
+height: 914px;
+}
+
+#villa-banner {
+height: 914px;
+}
+
+#europa-banner {
+height: 914px;
+}
+
+#volcanes-banner {
+height: 914px;
+}
+
+#mutis-banner {
+height: 914px;
+}
+
+#cactus-banner {
+height: 914px;
+}
+
+#col-banner {
+height: 914px;
+}
+
+#bogota-banner {
+height: 914px;
+}
+
+#paramo-banner {
+height: 914px;
+}
+
+#brilla-banner {
+height: 914px; 
+}
+
+#lajas-banner {
+height: 914px;
+}
+
+#termal-banner {
+height: 914px;  
+}
+
+#suezia-banner {
+height: 914px;
+}
+
+#bonsai-banner {
+height: 914px;
+}
+
+#navi-banner {
+height: 914px;  
+}
+
+.quien-banner {
+height: 900px;
+}
+
+p {
+font-size: 35px;
+}
+
+h1 {
+font-size: 5rem;
+}
+
+h2 {
+font-size: 3rem;
+padding: 19px;
+}
+
+li {
+font-size: 35px;
+}
+
+.sticky {
+width: 5%;
+}
+
+.sn-bu {
+width: 180px;
+height: 70px;
+font-size: 30px;
+padding: 5px;
+}
+
+.home-nav {
+height: 210px;
+}
+
+.home-nav li{
+padding: 10px;
+margin-top: 32px;
+}
+
+.logo {
+margin-top: -10px;
+}
+
+.titulo-banner {
+font-size: 56px;
+margin-top: -75px;
+}
+
+.button-banner {
+font-size: 25px;
+padding: 15px;
+}
+
+.form-label {
+font-size: 39px;
+}
+
+.form-text {
+font-size: 1.875em;
+}
+
+.form-control {
+height: 60px;
+}
+}
+
+/* media quaries  LAPTOP  */
 @media only screen and (max-width: 1290px) {
 .li-abt {
 display: none;
@@ -650,6 +807,7 @@ display: block;
 }
 }
 
+/* SPECIAL DEVICES */
 @media only screen and (max-width: 964px) {
 #gallery h1 {
 font-size: 37px;
@@ -658,7 +816,6 @@ font-size: 37px;
 p {
 font-size: 15px;
 }
-
 
 .villa-content h1 {
 font-size: 32px;
@@ -727,6 +884,7 @@ font-size: 37px;
 }
 }
 
+/* IPADS TABLETS  */
 @media only screen and (max-width: 820px) { 
 .transfer h1, 
 .ecotour h1 {
@@ -748,18 +906,16 @@ width: 4%;
 padding-bottom: 0px;
 padding-top: 105px;
 }
-
-/* .menu-position {
-    top: 3.5%;
-} */
 }
 
+/* SMALL DEVICES  */
 @media only screen and (max-width: 675px) {
 .sticky {
 left: 84%;
 }
 }
 
+/* EXTRA SMALL DEVICES  */
 @media only screen and (max-width: 414px) {
 h1 {
 font-size: 40px;
@@ -781,10 +937,4 @@ height: 600px;
 .iframe-container iframe {
 height: 600px;
 }
-
-/* .menu-position {
-    position: absolute;
-    top: 5%;
-    right: 4%;
-} */
 }
