@@ -798,6 +798,11 @@ font-size: 1.875em;
 .form-control {
 height: 60px;
 }
+
+.logo {
+margin-top: -15px;
+width: 380px;
+}
 }
 
 /* media quaries  LAPTOP  */
