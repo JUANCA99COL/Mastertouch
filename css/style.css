@@ -931,6 +931,7 @@ width: 4%;
 .contact-title {
 padding-bottom: 0px;
 padding-top: 105px;
+padding-bottom: 25px;
 }
 
 #gallery {
@@ -966,5 +967,9 @@ height: 600px;
 
 .iframe-container iframe {
 height: 600px;
+}
+
+.contact-title {
+    padding-bottom: 35px;
 }
 }
