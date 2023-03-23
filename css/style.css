@@ -213,7 +213,7 @@ position: relative;
 }
 
 #huila-banner {
-background-image: url("../img/fernanda-fierro-XV4XUU7gWlk-unsplash.jpg");
+background-image: url("../img/huila-12.jpg");
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center center;
@@ -244,6 +244,15 @@ position: relative;
 
 #footer {
 margin: 2%;
+}
+
+.img-huila {
+    width: 100%;
+    height: 205px;
+    padding: 0.25rem;
+    background-color: var(--bs-body-bg);
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
 }
 
 .thanks-message {
@@ -937,6 +946,10 @@ padding-bottom: 25px;
 #gallery {
     text-align: center;
 }
+
+.img-huila {
+    height: 250px;
+}
 }
 
 /* SMALL DEVICES  */
@@ -971,5 +984,9 @@ height: 600px;
 
 .contact-title {
     padding-bottom: 35px;
+}
+
+.img-huila {
+    height: auto;
 }
 }
