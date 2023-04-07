@@ -21,10 +21,10 @@ menuBtn.addEventListener('click', () => {
 });
 
 // translations 
-function loadGoogleTranslate(){
-  new google.translate.TranslateElement (
-      "google_element");
-}
+// function loadGoogleTranslate(){
+//   new google.translate.TranslateElement (
+//       "google_element");
+// }
 
 // Two images side by side
 function two() {
