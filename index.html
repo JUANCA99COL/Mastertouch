@@ -26,13 +26,15 @@
 </head>
 <body>
     <!-- nav  -->
-<div class="row home-nav">
-    <ul class="p-2 col-7">
+<div class="home-nav">
+    <ul class="p-2">
+        <!-- col-7 -->
         <li>
             <a href="index.html"><div class="logo"></div></a>
         </li>
     </ul>
-    <ul class="p-2 col-5">
+    <ul class="p-2 second-ul">
+        <!-- col-5 -->
         <li class="li-abt">
             <a href="#eventos">EVENTOS</a>
         </li>
@@ -60,21 +62,22 @@
           <li><a href="#contacto">CONTACTO</a></li>
         </ul>
       </div>
-    <section id="banner">
-        <div class="content">
-            <img class="logo-banner" src="img/whitenobg-logo.png" alt="">
-            <h2 class="titulo-banner text-center font-weight-bold text-white">NACIMOS PARA VIAJAR</h2>
-            <div id="google_element"></div>
-            <a href="#eventos"><button class="button-banner text-white m-auto d-block">RESERVAR TOUR</button></a>
-            <a href="#eventos"><i class="arrow-banner text-white fa-solid fa-angle-down"></i></a>    
+    <!-- video container  -->
+    <div id="hero">
+        <video playsinline autoplay loop muted>
+        <source src="col-vodeo.mp4" type="video/mp4">
+        <!-- <source src="painting-video.mov" type="video/mov">
+        <source src="painting-video.webm" type="video/webm">
+        <source src="painting-video.wmv" type="video/wmv"> -->
+        Your browser does not support the video tag.
+        </video>
+        <div class="caption">
+        <img class="logo-banner" src="img/whitenobg-logo.png" alt="">
+        <h2 class="titulo-banner text-center font-weight-bold text-white">NACIMOS PARA <br> VIAJAR</h2>
+        <a href="#eventos"><button class="button-banner text-white m-auto d-block">RESERVAR TOUR</button></a>
+        <a href="#eventos"><i class="arrow-banner text-white fa-solid fa-angle-down"></i></a>    
         </div>
-        <a href="https://api.whatsapp.com/send?phone=573153964259"><img class="sticky" src="img/icons8-whatsapp-48.png" alt=""></a>
-    </section>
-    <section id="we-colombia">
-        <div class="iframe-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/AkP_LymPvNE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </section>
+    </div>
     <section id="services">
         <div class="row">
             <div class="guide col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
@@ -187,20 +190,20 @@
             </div>
         </div>
     </section>
-    <section id="quienes" class="border border-dager">
+    <section id="quienes">
         <div class="quien-banner">
             <h1 class="quien-title text-white">QUIENES SOMOS</h1>
             <div class="row quienes-content">
                 <div class="quien-icons col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                    <img class="img-thumbnail" src="img/thumbs-up.png" alt="">
+                    <img class="img-thumbnail2" src="img/thumbs-up.png" alt="">
                     <h3 class="p-2 mt-2">CONFIANZA</h3>
                 </div>
                 <div class="quien-icons col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                    <img class="img-thumbnail" src="img/icons8-tick-box-50.png" alt="">
+                    <img class="img-thumbnail2" src="img/icons8-tick-box-50.png" alt="">
                     <h3 class="p-2 mt-2">SEGURIDAD</h3>
                 </div>
                 <div class="quien-icons col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                    <img class="img-thumbnail" src="img/icons8-heart-50.png" alt="">
+                    <img class="img-thumbnail2" src="img/icons8-heart-50.png" alt="">
                     <h3 class="p-2 mt-2">PASION</h3>
                 </div>
             </div>
