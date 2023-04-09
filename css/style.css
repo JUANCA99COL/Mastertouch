@@ -927,13 +927,6 @@ video {
         width: 5%;
     }
 
-    .sn-bu {
-        width: 180px;
-        height: 70px;
-        font-size: 30px;
-        padding: 5px;
-    }
-
     .home-nav {
         height: 210px;
     }
@@ -1137,6 +1130,12 @@ video {
 @media only screen and (max-width: 414px) {
     h1 {
         font-size: 40px;
+    }
+
+    .btn-detalles {
+        width: 120px;
+        height: 34px;
+        font-size: 15px;
     }
 
     .logo-banner {
