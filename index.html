@@ -24,8 +24,8 @@
 <!-- own style  -->
 <link rel="stylesheet" href="css/style.css">
 </head>
-<body id="start">
-    <!-- nav  -->
+<body id="start" data-site-search>
+<!-- nav  -->
 <div class="home-nav">
     <ul class="p-2">
         <!-- col-7 -->
@@ -48,27 +48,28 @@
             <a href="#contacto">CONTACTO</a>
         </li>
         <li class="menu-position">
-            <div id="burger" class="menu-btn">
-                <div class="menu-btn__burger"></div>
-            </div>
+            <i class="fa-solid fa-bars menu-icon"></i>
         </li>
     </ul>
     </div>
-    <div id="box1" class="sec-nav">
+    <div class="sec-nav">
         <ul>
           <li><a href="#eventos">EVENTOS</a></li>
           <li><a href="#services">SERVICIOS</a></li>
           <li><a href="#quienes">QUIENES SOMOS</a></li>
           <li><a href="#contacto">CONTACTO</a></li>
+          <input type="search" id="search">
+          <label hidden for="search">Search</label>
+          <a class="btn btn-primary" href="" data-search>Buscar</a>
         </ul>
-      </div>
+    </div>
     <!-- video container  -->
     <div id="hero">
         <video playsinline autoplay loop muted>
         <source src="col-vodeo.mp4" type="video/mp4">
-        <!-- <source src="painting-video.mov" type="video/mov">
-        <source src="painting-video.webm" type="video/webm">
-        <source src="painting-video.wmv" type="video/wmv"> -->
+        <source src="col-vodeo.mov" type="video/mov">
+        <source src="col-vodeo.webm" type="video/webm">
+        <source src="col-vodeo.wmv" type="video/wmv">
         Your browser does not support the video tag.
         </video>
         <div class="caption">
@@ -307,10 +308,12 @@
         </div>
     </section>      
 <!-- jquery -->
-<script
+<!-- <script
 src="https://code.jquery.com/jquery-3.5.1.min.js"
 integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-crossorigin="anonymous"></script>
+crossorigin="anonymous"></script> -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <!-- bootstrap js  -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 <!-- own script  -->

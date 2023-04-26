@@ -1,23 +1,18 @@
+// search 
+const dataSiteSearch = document.querySelector("[data-site-search]")
+const searchInput = document.querySelector("[data-search]")
+
+searchInput.addEventListener("input", (e) => {
+  const value = e.target.value 
+  console.log(value)
+});
+
 // jquery functions 
 $(".sec-nav").hide();
 $( document ).ready(function() {
-$(".menu-btn").click(function(){
-    $(".sec-nav").fadeToggle();
+$(".menu-icon").click(function(){
+    $(".sec-nav").slideToggle();
 });
-});
-// ==========================================================
-//	HAMBURGER MENU
-// ==========================================================
-const menuBtn = document.querySelector('.menu-btn');
-let menuOpen = false;
-menuBtn.addEventListener('click', () => {
-  if(!menuOpen) {
-    menuBtn.classList.add('open');
-    menuOpen = true;
-  } else {
-    menuBtn.classList.remove('open');
-    menuOpen = false;
-  }
 });
 
 // translations 
