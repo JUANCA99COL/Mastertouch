@@ -1,11 +1,24 @@
 // search 
-const dataSiteSearch = document.querySelector("[data-site-search]")
-const searchInput = document.querySelector("[data-search]")
+// let availablekeywords = [
+//   'HTML',
+//   'CSS',
+//   'JS',
+//   'WEB TUTORIALS'
+// ];
 
-searchInput.addEventListener("input", (e) => {
-  const value = e.target.value 
-  console.log(value)
-});
+// const resutlBox = document.querySelector(".result-box");
+// const inputBox = document.querySelector("input-box");
+
+// inputBox.onkeyup = function (){
+//   let result = [];
+//   let input = inputBox.value;
+//   if(input.length){
+//     result = availablekeywords.filter((keyword) => {
+//       return keyword.toLowerCase().includes(input.toLowerCase());
+//     });
+//     console.log(result);
+//   }
+// }
 
 // jquery functions 
 $(".sec-nav").hide();
