@@ -1,24 +1,24 @@
-// search 
-// let availablekeywords = [
-//   'HTML',
-//   'CSS',
-//   'JS',
-//   'WEB TUTORIALS'
-// ];
+// looping events in input while user searches 
+const search = () => {
+  const searchbox = document.getElementById("search-item").value.toUpperCase();
+  const eventitems = document.getElementById("event-list")
+  const event = document.querySelectorAll(".event")
+  const ename = eventitems.getElementsByTagName("h3")
 
-// const resutlBox = document.querySelector(".result-box");
-// const inputBox = document.querySelector("input-box");
+  for(var i = 0; i < ename.length; i++) {
+    let match = event[i].getElementsByTagName('h3')[0];
 
-// inputBox.onkeyup = function (){
-//   let result = [];
-//   let input = inputBox.value;
-//   if(input.length){
-//     result = availablekeywords.filter((keyword) => {
-//       return keyword.toLowerCase().includes(input.toLowerCase());
-//     });
-//     console.log(result);
-//   }
-// }
+    if (match) {
+      let textvalue = match.textContent || match.innerHTML
+
+      if (textvalue.toUpperCase().indexOf(searchbox) > -1) {
+        event[i].style.display = "";
+      } else {
+        event[i].style.display = "none";        
+      }
+    }
+  }
+} 
 
 // jquery functions 
 $(".sec-nav").hide();
@@ -28,11 +28,30 @@ $(".menu-icon").click(function(){
 });
 });
 
-// translations 
-// function loadGoogleTranslate(){
-//   new google.translate.TranslateElement (
-//       "google_element");
-// }
+// hiding content before typing
+$(".search").on('keyup', function() {
+  var searchValue = $(this).val();
+  searchAndFilter(searchValue)
+});
+
+function searchAndFilter(searchTerm) {
+  if (searchTerm == '') {
+    $("#event-list").hide()
+  } else {
+    $("#event-list").each(function() {
+      var currentText = $(this).text();
+      currentText = currentText.toUpperCase();
+      searchTerm = searchTerm.toUpperCase();
+      if (currentText.indexOf(searchTerm) >= 0) {
+        $(this).show();
+      }
+    });
+  }
+}
+
+$(document).ready(function() {
+  $("#event-list").hide();
+});
 
 // Two images side by side
 function two() {

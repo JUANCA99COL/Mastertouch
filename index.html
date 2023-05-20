@@ -17,10 +17,10 @@
 <!-- bootstrap  -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-<!-- animations  -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 <!-- font awesome  -->
 <script src="https://kit.fontawesome.com/442c3c1532.js" crossorigin="anonymous"></script>
+<!-- animations  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 <!-- own style  -->
 <link rel="stylesheet" href="css/style.css">
 </head>
@@ -58,12 +58,85 @@
           <li><a href="#services">SERVICIOS</a></li>
           <li><a href="#quienes">QUIENES SOMOS</a></li>
           <li><a href="#contacto">CONTACTO</a></li>
-          <div class="search-box">
-            <input type="text" id="input-box" placeholder="Search anything" autocomplete="off">          
-            <div class="result-box">
+          <!-- search form  -->
+        <section class="container">
+          <form>
+            <input type="search" class="search" id="search-item" value="" placeholder="Search" onkeyup="search()">   
+            <i class="fa-solid fa-magnifying-glass loop-icon"></i>       
+          </form>
+          <div class="event-list" id="event-list">
+            <div class="event">
+                <div class="e-details">
+                    <a href="ecotourHuila.html"><h3>Ecotour a Huila 2023</h3></a>
+                </div>
             </div>
-            <a class="btn btn-primary" href="" data-search>Buscar</a>
+            <div class="event">
+                <div class="e-details">
+                    <a href="ecotourHuila2.html"><h3>Ecotour a Huila (2)</h3></a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="e-details">
+                    <a href="barichara.html"><h3>Estancia y ecotour en Barichara</h3></a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="e-details">
+                    <a href="tourEuropa.html"><h3>Tour por Europa Otoñal 2023</h3></a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="e-details">
+                    <a href="lajas-dos.html"><h3>Ecotour Santuario Las Lajas</h3></a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="e-details">
+                    <a href="lajas-dos.html"><h3>Ecotour Santuario Las Lajas 2</h3></a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="e-details">
+                    <a href="VillaDeLeyva.html"><h3>Estancia y ecotour en Villa de Leyva</h3></a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="e-details">
+                    <a href="antiguaBogota.html"><h3>Tour a la Antigua Bogota</h3></a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="e-details">
+                    <a href="colibries.html"><h3>Ecotour al Templo de los Colibries</h3></a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="e-details">
+                    <a href="EcotourParamo.html"><h3>Ecotour Paramo Sumapaz</h3></a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="e-details">
+                    <a href="MuseoBonzai.html"><h3>Ecotour el Museo de los Bonsai</h3></a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="e-details">
+                    <a href="cactus.html"><h3>Ecotour Cactus y Suculentas</h3></a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="e-details">
+                    <a href="EcotourTermales.html"><h3>Ecotour termales los volcanes</h3></a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="e-details">
+                    <a href="JardinMutis.html"><h3>Jardin Botanico Sabio Mutis"</h3></a>
+                </div>
+            </div>
           </div>
+        </section>
         </ul>
     </div>
     <!-- video container  -->
@@ -76,10 +149,11 @@
         Your browser does not support the video tag.
         </video>
         <div class="caption">
-        <img class="logo-banner" src="img/whitenobg-logo.png" alt="">
-        <h2 class="titulo-banner text-center font-weight-bold text-white">NACIMOS PARA <br> VIAJAR</h2>
-        <a href="#eventos"><button class="button-banner text-white m-auto d-block">RESERVAR TOUR</button></a>
-        <a href="#eventos"><i class="arrow-banner text-white fa-solid fa-angle-down"></i></a>    
+            <img class="logo-banner" src="img/whitenobg-logo.png" alt="">
+            <h2 class="titulo-banner text-center font-weight-bold text-white">NACIMOS PARA <br> VIAJAR</h2>
+            <a href="#eventos"><button class="button-banner mt-2 text-white m-auto d-block">RESERVAR TOUR</button></a>
+            <a href="#eventos"><i class="arrow-banner text-white fa-solid fa-angle-down"></i></a>    
+            <a href="https://master--touch-co-nz.translate.goog/index.html?_x_tr_sl=es&_x_tr_tl=en&_x_tr_hl=en-US&_x_tr_pto=wapp" class="btn btn-danger">translate to english</a>
         </div>
     </div>
     <section id="services">
@@ -115,7 +189,7 @@
                 <a href="ecotourHuila.html"><button class="btn-detalles">Detalles</button></a>
             </div>
             <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                <img class="img-thumbnail" src="img/flavia-carpio-P3PFi8THbUs-unsplash.jpg" alt="image">
+                <img class="img-huila" src="img/dark-huila.png" alt="image">
                 <h2>Ecotour a <br> Huila 2023 (2)</h2>
                 <a href="ecotourHuila2.html"><button class="btn-detalles">Detalles</button></a>
             </div>
@@ -200,74 +274,75 @@
             <div class="row quienes-content">
                 <div class="quien-icons col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
                     <img class="img-thumbnail2" src="img/thumbs-up.png" alt="">
-                    <h3 class="p-2 mt-2">CONFIANZA</h3>
+                    <h2 class="p-2 mt-2">CONFIANZA</h2>
                 </div>
                 <div class="quien-icons col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
                     <img class="img-thumbnail2" src="img/icons8-tick-box-50.png" alt="">
-                    <h3 class="p-2 mt-2">SEGURIDAD</h3>
+                    <h2 class="p-2 mt-2">SEGURIDAD</h2>
                 </div>
                 <div class="quien-icons col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
                     <img class="img-thumbnail2" src="img/icons8-heart-50.png" alt="">
-                    <h3 class="p-2 mt-2">PASION</h3>
+                    <h2 class="p-2 mt-2">PASION</h2>
                 </div>
             </div>
         </div>
-        <div class="text-center m-2 p-2">
-            <p class="quien-para p-5">
-                Mastertouch es una empresa comprometida en transportar, guiar y asesorar al cliente con calidad, en forma oportuna, proporcionándole un alto nivel de satisfacción en el servicio, contando con un grupo humano capacitado y altamente comprometido para lograr los objetivos de nuestra gestión a través de procesos de mejoramiento continuo y creación de valores.                
-                Contamos con excelentes vehículos climatizados, automóviles  y vans. Nuestra amplia experiencia en el sector nos permite garantizar un excelente servicio.
-                <br> <br>
-                Somos apasionados por viajar y brindar experiencias inolvidables, llevamos a ciudadanos y turistas a conocer la cultura colombiana y la gran gastronomia que ofrece. Tenemos una gran cercania con la espiritualidad y la naturaleza. Por lo tanto 
-                damos espacios para la meditacion en templos alrededor de Colombia. Nuestros planes incluyen eco tours, caminatas, exhibiciones y lugares iconicos 
-                que no se pueden perder.
-                <br><br>
-                Estamos mas que felices por mostrarte lo maravillosa que Colombia puede ser.
-                <br>
-                No dudes en contactarnos o llamarnos si necesitas asistencia.
-                <br><br>
-                Atentamente Mastertouch | Nacimos para viajar
-            </p>
-        </div>
         <!-- slideshow  -->
-        <div class="galleria-fotos">
-            <div id="carouselExampleIndicators" class="carousel slide">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        <div class="row my-5">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                <div class="m-2 p-2">
+                    <p class="quien-para p-5">
+                        Mastertouch es una empresa comprometida en transportar, guiar y asesorar al cliente con calidad, en forma oportuna, proporcionándole un alto nivel de satisfacción en el servicio, contando con un grupo humano capacitado y altamente comprometido para lograr los objetivos de nuestra gestión a través de procesos de mejoramiento continuo y creación de valores.                
+                        Contamos con excelentes vehículos climatizados, automóviles  y vans. Nuestra amplia experiencia en el sector nos permite garantizar un excelente servicio.
+                        <br> <br>
+                        Somos apasionados por viajar y brindar experiencias inolvidables, llevamos a ciudadanos y turistas a conocer la cultura colombiana y la gran gastronomia que ofrece. Tenemos una gran cercania con la espiritualidad y la naturaleza. Por lo tanto 
+                        damos espacios para la meditacion en templos alrededor de Colombia. Nuestros planes incluyen eco tours, caminatas, exhibiciones y lugares iconicos 
+                        que no se pueden perder.  
+                        Estamos mas que felices por mostrarte lo maravillosa que Colombia puede ser.
+                    </p>
                 </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img class="ca-img d-block" src="img/quienes-1.jpg" alt="First slide">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="ca-img d-block" src="img/quienes-3.jpg" alt="First slide">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="ca-img d-block" src="img/quienes-2.jpg" alt="First slide">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="ca-img d-block" src="img/quienes-4.jpg" alt="First slide">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="ca-img d-block" src="img/quienes-7.jpg" alt="First slide">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="ca-img d-block" src="img/quienes-6.jpg" alt="First slide">
-                  </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                <div class="galleria-fotos">
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img class="ca-img d-block" src="img/quienes-1.jpg" alt="First slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="ca-img d-block" src="img/quienes-3.jpg" alt="First slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="ca-img d-block" src="img/quienes-2.jpg" alt="First slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="ca-img d-block" src="img/quienes-4.jpg" alt="First slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="ca-img d-block" src="img/quienes-7.jpg" alt="First slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="ca-img d-block" src="img/quienes-6.jpg" alt="First slide">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
+            </div>
         </div>
     </section>
     <!-- id="contacto" -->
@@ -311,16 +386,11 @@
         </div>
     </section>      
 <!-- jquery -->
-<!-- <script
-src="https://code.jquery.com/jquery-3.5.1.min.js"
-integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-crossorigin="anonymous"></script> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <!-- bootstrap js  -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 <!-- own script  -->
 <script src="js/script.js"></script>
-<!-- translations  -->
-<!-- <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script> -->
+<script src="js/suggestions.js"></script> 
 </body>
 </html>
