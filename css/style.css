@@ -382,10 +382,12 @@ video {
 
 .sticky {
   position: fixed;
+  width: 4%;
+  height: auto;
   top: 87%;
-  left: 90%;
-  z-index: 30;
+  left: 89%;
   cursor: pointer;
+  z-index: 30;
 }
 
 .sticky:hover {
@@ -946,10 +948,6 @@ input::placeholder {
     padding-top: 190px;
   }
 
-  .sticky {
-    width: 5%;
-  }
-
   .home-nav {
     height: 210px;
   }
@@ -1147,12 +1145,17 @@ input::placeholder {
   .quien-para {
     margin-top: 33px;
   }
+
+  .sticky {
+    width: 7%;
+  }
 }
 
 /* SMALL DEVICES  */
 @media only screen and (max-width: 675px) {
   .sticky {
-    left: 84%;
+    left: 80%;
+    width: 11%;
   }
 
   #hero .caption h2 {
