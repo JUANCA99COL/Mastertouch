@@ -749,6 +749,8 @@ input::placeholder {
 .btn-danger {
   background-color: #f46434;
   border: none;
+  margin-bottom: 20px;
+  padding: 10px;
 }
 
 .btn-danger:hover {
