@@ -255,13 +255,6 @@ a {
   align-items: center;
   justify-content: center;
   position: relative;
-  top: 0;
-  left: 0;
-  background-image: url("../img/wp-phone.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  -moz-background-size: cover;
-  background-position: center center;
 }
 
 #hero::after {
@@ -748,9 +741,8 @@ input::placeholder {
 }
 
 .btn-detalles:hover {
-  animation: bounce;
-  /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 1s;
+  background-color: #f46434a2; 
+  border: none;
 }
 
 .btn-danger {
@@ -1175,6 +1167,14 @@ input::placeholder {
   #hero::after {
     width: 100%;
     height: 100vh;
+  }
+
+  #hero {
+    background-image: url("../img/wp-phone.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-background-size: cover;
+    background-position: center center;
   }
 }
 
