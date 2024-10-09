@@ -1,414 +1,506 @@
 <!DOCTYPE html>
 <html lang=en>
-<head>
-<meta charset=UTF-8>
-<meta name=language content=spanish>
-<meta name=viewport content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=1">
-<meta name=copyright content="Pagina Web mastertouch.co.nz">
-<meta name=author content="Raul Caro">
-<meta name=audience content=all>
-<meta name=description content="Descripcion longitud 150 y 160">
-<meta name=keywords content="mastertouch, viajes, trips">
-<meta name=robots content="index, all, follow">
-<meta name=category content=viajes>
-<link rel=icon type=image/x-icon href=img/colombia-icon.png>
-<meta itemprop=telephone content="+57 3153964259">
-<title>Mastertouch | Nacimos para Viajar</title>
-<link href=https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css rel=stylesheet>
-<link href=https://getbootstrap.com/docs/5.3/assets/css/docs.css rel=stylesheet>
-<link href=https://unpkg.com/aos@2.3.1/dist/aos.css rel=stylesheet>
-<link rel=stylesheet href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-<link rel=stylesheet href=css/style.css>
-<script src=https://kit.fontawesome.com/3c98501c58.js crossorigin=anonymous></script>
-</head>
-<body id=start data-site-search>
-<div class=home-nav>
-<ul class=p-2>
-<li>
-<a href=#start><div class=logo></div></a>
-</li>
-</ul>
-<ul class="p-2 second-ul">
-<li class=li-abt>
-<a href=#eventos>EVENTOS</a>
-</li>
-<li class=li-abt>
-<a href=#services>SERVICIOS</a>
-</li>
-<li class=li-abt>
-<a href=#quienes>QUIENES SOMOS</a>
-</li>
-<li class=li-abt>
-<a href=#contacto>CONTACTO</a>
-</li>
-<li class=menu-position>
-<i class="fa-solid fa-bars menu-icon"></i>
-</li>
-</ul>
-</div>
-<div class=sec-nav>
-<ul>
-<li><a href=#eventos>EVENTOS</a></li>
-<li><a href=#services>SERVICIOS</a></li>
-<li><a href=#quienes>QUIENES SOMOS</a></li>
-<li><a href=#contacto>CONTACTO</a></li>
-<section class=container>
-<form>
-<input type=search class=search id=search-item value placeholder=Buscar onkeyup=search()>
-<i class="fa-solid fa-magnifying-glass loop-icon"></i>
-</form>
-<div class=event-list id=event-list>
-<div class=event>
-<div class=e-details>
-<a href=ecotourHuila.html><h3>Tour a Huila I</h3></a>
-</div>
-</div>
-<div class=event>
-<div class=e-details>
-<a href=ecotourHuila2.html><h3>Tour a Huila II</h3></a>
-</div>
-</div>
-<div class=event>
-<div class=e-details>
-<a href=barichara.html><h3>Tour en Barichara</h3></a>
-</div>
-</div>
-<div class=event>
-<div class=e-details>
-<a href=tourEuropa.html><h3>Tour por Europa OtoÃ±al</h3></a>
-</div>
-</div>
-<div class=event>
-<div class=e-details>
-<a href=lajas-dos.html><h3>Tour a Santuario Las Lajas I</h3></a>
-</div>
-</div>
-<div class=event>
-<div class=e-details>
-<a href=lajas-dos.html><h3>Tour a Santuario Las Lajas II</h3></a>
-</div>
-</div>
-<div class=event>
-<div class=e-details>
-<a href=VillaDeLeyva.html><h3>Tour a Villa de Leyva, Boyaca Colombia</h3></a>
-</div>
-</div>
-<div class=event>
-<div class=e-details>
-<a href=antiguaBogota.html><h3>Tour a la Antigua Bogota</h3></a>
-</div>
-</div>
-<div class=event>
-<div class=e-details>
-<a href=colibries.html><h3>Tour al Templo de los Colibries</h3></a>
-</div>
-</div>
-<div class=event>
-<div class=e-details>
-<a href=EcotourParamo.html><h3>Tour al Paramo de Sumapaz</h3></a>
-</div>
-</div>
-<div class=event>
-<div class=e-details>
-<a href=MuseoBonzai.html><h3>Tour al Museo de los Bonsai</h3></a>
-</div>
-</div>
-<div class=event>
-<div class=e-details>
-<a href=cactus.html><h3>Tour de Cactus y Suculentas</h3></a>
-</div>
-</div>
-<div class=event>
-<div class=e-details>
-<a href=EcotourTermales.html><h3>Tour en termales los volcanes</h3></a>
-</div>
-</div>
-<div class=event>
-<div class=e-details>
-<a href=JardinMutis.html><h3>Tour a Jardin Botanico Sabio Mutis"</h3></a>
-</div>
-</div>
-<div class=event>
-<div class=e-details>
-<a href=brillaColombia.html><h3>Tour de luces en Bogota Colombia"</h3></a>
-</div>
-</div>
-<div class=event>
-<div class=e-details>
-<a href=tour-navi.html><h3>Tour de Navidad en Tomine</h3></a>
-</div>
-</div>
-</div>
-</section>
-</ul>
-</div>
-<div id=hero>
-<video playsinline autoplay loop muted>
-<source src=col-vodeo.mp4 type=video/mp4>
-<source src=col-vodeo.mov type=video/mov>
-<source src=col-vodeo.webm type=video/webm>
-<source src=col-vodeo.wmv type=video/wmv>
-Your browser does not support the video tag.
-</video>
-<div class=caption>
-<img data-aos=zoom-in class=logo-banner src=img/whitenobg-logo.png alt>
-<h2 data-aos=zoom-in class="titulo-banner text-center font-weight-bold text-white">NACIMOS PARA <br> VIAJAR</h2>
-<a href="https://master--touch-co-nz.translate.goog/index.html?_x_tr_sl=es&_x_tr_tl=en&_x_tr_hl=en-US&_x_tr_pto=wapp" class="btn btn-danger">
-English
-<i class="fa-solid fa-globe"></i>
-</a>
-<a href=#eventos><button class="button-banner mt-2 text-white m-auto d-block">RESERVAR TOUR</button></a>
-<a href=#eventos><i class="arrow-banner text-white fa-solid fa-angle-down"></i></a>
-</div>
-<a href="https://api.whatsapp.com/send?phone=573153964259">
-<img class=sticky src=img/icons8-whatsapp-48.png alt>
-</a>
-</div>
-<section id=services>
-<div class=row>
-<div class="guide col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-<div class="serv-content text-white text-center">
-<h1 data-aos=flip-left>GUIANZA</h1>
-<p data-aos=fade-down>Mastertouch es una empresa comprometida en transportar, guiar y asesorar al cliente con calidad, en forma oportuna.</p>
-</div>
-</div>
-<div class="transfer col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-<div class="serv-content text-white text-center">
-<h1 data-aos=flip-left>TRASLADOS</h1>
-<p data-aos=fade-down>Te recogemos en el aeropuerto y te dejamos direcamtente en el hotel y viceversa.
-Servicio rapido
-<br>
-y efectivo.
-</p>
-</div>
-</div>
-<div class="ecotour col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-<div class="serv-content text-white text-center">
-<h1 data-aos=flip-left>ECOTOURS</h1>
-<p data-aos=fade-down>Te llevaremos a visitar lugares para disfrutar de la naturaleza y cultura colombiana</p>
-</div>
-</div>
-</div>
-</section>
-<section id=eventos>
-<h1 class="text-center mb-5 font-weight-bold">EVENTOS</h1>
-<div data-aos=fade-down class="row text-center">
-<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-<img class=img-huila src=img/llanos-12.jpeg alt=image>
-<h2>Tour a los llanos</h2>
-<a href=llanos.html><button class=btn-detalles>Detalles</button></a>
-</div>
-<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-<img class=img-huila src=img/huila-11.jpg alt=image>
-<h2>Tour a Huila I</h2>
-<a href=ecotourHuila.html><button class=btn-detalles>Detalles</button></a>
-</div>
-<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-<img class=img-huila src=img/dark-huila.png alt=image>
-<h2>Tour a Huila II</h2>
-<a href=ecotourHuila2.html><button class=btn-detalles>Detalles</button></a>
-</div>
-</div>
-<div data-aos=fade-down class="row text-center">
-<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-<img class=img-thumbnail src=img/tour-europa.jpg alt=image>
-<h2>Tour a Europa</h2>
-<a href=tourEuropa.html><button class=btn-detalles>Detalles</button></a>
-</div>
-<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-<img class=img-thumbnail src=img/lajas-1.jpg alt=image>
-<h2>Tour a Santuario Las Lajas I</h2>
-<a href=TourLajas.html><button class=btn-detalles>Detalles</button></a>
-</div>
-<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-<img class=img-thumbnail src=img/laj-tres-6.jpg alt=image>
-<h2>Tour a Santuario Las Lajas II</h2>
-<a href=lajas-dos.html><button class=btn-detalles>Detalles</button></a>
-</div>
-</div>
-<div data-aos=fade-down class="row text-center">
-<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-<img class=img-thumbnail src=img/villa-de-leyva.jpg alt=image>
-<h2>Tour a Villa de Leyva, Boyaca Colombia</h2>
-<a href=VillaDeLeyva.html><button class=btn-detalles>Detalles</button></a>
-</div>
-<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-<img class=img-thumbnail src=img/coibris.jpg alt=image>
-<h2>Tour al Templo de los Colibries</h2>
-<a href=colibries.html><button class=btn-detalles>Detalles</button></a>
-</div>
-<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-<img class=img-thumbnail src=img/bogota.jpg alt=image>
-<h2>Tour a la Antigua Bogota</h2>
-<a href=antiguaBogota.html><button class=btn-detalles>Detalles</button></a>
-</div>
-</div>
-<div data-aos=fade-down class="row text-center">
-<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-<img class=img-thumbnail src=img/tour-nav-15.jpg alt=image>
-<h2>Tour de Navidad en Tomine</h2>
-<a href=tour-navi.html><button class=btn-detalles>Detalles</button></a>
-</div>
-<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-<img class=img-thumbnail src=img/sumapaz.jpg alt=image>
-<h2>Tour al Paramo de Sumapaz</h2>
-<a href=EcotourParamo.html><button class=btn-detalles>Detalles</button></a>
-</div>
-<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-<img class=img-thumbnail src=img/bonsai-3.jpg alt=image>
-<h2>Tour al Museo de los Bonsai</h2>
-<a href=MuseoBonzai.html><button class=btn-detalles>Detalles</button></a>
-</div>
-</div>
-<div data-aos=fade-down class="row text-center">
-<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-<img class=img-thumbnail src=img/cactus.jpg alt=image>
-<h2>Tour de Cactus y Suculentas</h2>
-<a href=cactus.html><button class=btn-detalles>Detalles</button></a>
-</div>
-<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-<img class=img-thumbnail src=img/volcanes.jpg alt=image>
-<h2>Tour en termales los volcanes</h2>
-<a href=EcotourTermales.html><button class=btn-detalles>Detalles</button></a>
-</div>
-<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-<img class=img-thumbnail src=img/mutis.jpg alt=image>
-<h2>Tour a Jardin Botanico Sabio Mutis</h2>
-<a href=JardinMutis.html><button class=btn-detalles>Detalles</button></a>
-</div>
-</div>
-<div data-aos=fade-down class="row text-center">
-<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-<img class=img-huila src=img/brilla-1.png alt=image>
-<h2>Tour de luces en Bogota Colombia</h2>
-<a href=brillaColombia.html><button class=btn-detalles>Detalles</button></a>
-</div>
-<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-<img class=img-huila src=img/bari-banner.jpg alt=image>
-<h2>Tour a Barichara</h2>
-<a href=barichara.html><button class=btn-detalles>Detalles</button></a>
-</div>
-</div>
-</section>
-<section id=quienes>
-<div class=quien-banner>
-<h1 class="quien-title text-white">QUIENES SOMOS</h1>
-<div class="row quienes-content">
-<div class="quien-icons col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-<img data-aos-delay=600 data-aos=flip-right class=img-thumbnail2 src=img/thumbs-up.png alt>
-<h2 class="p-2 mt-2">CONFIANZA</h2>
-</div>
-<div class="quien-icons col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-<img data-aos-delay=800 data-aos=flip-right class=img-thumbnail2 src=img/icons8-tick-box-50.png alt>
-<h2 class="p-2 mt-2">SEGURIDAD</h2>
-</div>
-<div class="quien-icons col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-<img data-aos-delay=1000 data-aos=flip-right class=img-thumbnail2 src=img/icons8-heart-50.png alt>
-<h2 class="p-2 mt-2">PASION</h2>
-</div>
-</div>
-</div>
-<div class="row my-5">
-<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-<div class="m-2 p-2">
-<p data-aos-delay=600 data-aos=fade-right class="quien-para p-5">
-Mastertouch es una empresa comprometida en transportar, guiar y asesorar al cliente con calidad, en forma oportuna, proporcionandole un alto nivel de satisfaccion en el servicio, contando con un grupo humano capacitado y altamente comprometido para lograr los objetivos de nuestra gestion a traves de procesos de mejoramiento continuo y creacion de valores.
-Contamos con excelentes vehiculos climatizados, automoviles y vans. Nuestra amplia experiencia en el sector nos permite garantizar un excelente servicio.
-<br> <br>
-Somos apasionados por viajar y brindar experiencias inolvidables, llevamos a ciudadanos y turistas a conocer la cultura colombiana y la gran gastronomia que ofrece. Tenemos una gran cercania con la espiritualidad y la naturaleza. Por lo tanto
-damos espacios para la meditacion en templos alrededor de Colombia. Nuestros planes incluyen eco tours, caminatas, exhibiciones y lugares iconicos
-que no se pueden perder.
-Estamos mas que felices por mostrarte lo maravillosa que Colombia puede ser.
-</p>
-</div>
-</div>
-<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-<div data-aos-delay=1000 data-aos=fade-left class=galleria-fotos>
-<div id=carouselExampleIndicators class="carousel slide">
-<div class=carousel-indicators>
-<button type=button data-bs-target=#carouselExampleIndicators data-bs-slide-to=0 class=active aria-current=true aria-label="Slide 1"></button>
-<button type=button data-bs-target=#carouselExampleIndicators data-bs-slide-to=1 aria-label="Slide 2"></button>
-<button type=button data-bs-target=#carouselExampleIndicators data-bs-slide-to=2 aria-label="Slide 3"></button>
-<button type=button data-bs-target=#carouselExampleIndicators data-bs-slide-to=3 aria-label="Slide 4"></button>
-<button type=button data-bs-target=#carouselExampleIndicators data-bs-slide-to=4 aria-label="Slide 5"></button>
-<button type=button data-bs-target=#carouselExampleIndicators data-bs-slide-to=5 aria-label="Slide 6"></button>
-</div>
-<div class=carousel-inner>
-<div class="carousel-item active">
-<img class="ca-img d-block" src=img/quienes-1.jpg alt="First slide">
-</div>
-<div class=carousel-item>
-<img class="ca-img d-block" src=img/quienes-3.jpg alt="First slide">
-</div>
-<div class=carousel-item>
-<img class="ca-img d-block" src=img/quienes-2.jpg alt="First slide">
-</div>
-<div class=carousel-item>
-<img class="ca-img d-block" src=img/quienes-4.jpg alt="First slide">
-</div>
-<div class=carousel-item>
-<img class="ca-img d-block" src=img/quienes-7.jpg alt="First slide">
-</div>
-<div class=carousel-item>
-<img class="ca-img d-block" src=img/quienes-6.jpg alt="First slide">
-</div>
-</div>
-<button class=carousel-control-prev type=button data-bs-target=#carouselExampleIndicators data-bs-slide=prev>
-<span class=carousel-control-prev-icon aria-hidden=true></span>
-<span class=visually-hidden>Previous</span>
-</button>
-<button class=carousel-control-next type=button data-bs-target=#carouselExampleIndicators data-bs-slide=next>
-<span class=carousel-control-next-icon aria-hidden=true></span>
-<span class=visually-hidden>Next</span>
-</button>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id=contacto>
-<h1 class="contact-title text-center text-white">CONTACTO</h1>
-<form class="myForm p-5 text-white" id=section-2 action=https://formsubmit.co/24cdc782acbce6c87c8ea07ab5571286 method=POST>
-<div class="mb-3 frm-w">
-<label for=exampleInputEmail1 class=form-label>Nombre</label>
-<input type=text name=name class=form-control id=exampleInputEmail1 aria-describedby=emailHelp>
-</div>
-<div class="mb-3 frm-w">
-<label for=exampleInputEmail1 class=form-label>Correo</label>
-<input name=email type=email class=form-control id=exampleInputEmail1 aria-describedby=emailHelp required>
-<div id=emailHelp class="text-white form-text">We'll never share your email with anyone else.</div>
-</div>
-<div class="mb-3 frm-w">
-<label for=validationTextarea class=form-label>Mensaje</label>
-<textarea name=message class=form-control id=validationTextarea required></textarea>
-<div class=invalid-feedback>
-Please enter a message in the textarea.
-</div>
-</div>
-<button type=submit class=btn-detalles value="Send Form">Enviar</button>
-<input type=hidden name=_next value=https://master-touch.co.nz//thank-you.html>
-<input type=hidden name=_subject value="New submission!">
-<input type=hidden name=_captcha value=false>
-<input type=hidden name=_autoresponse value="Gracias por contactarnos, revisaremos tu solicitud y pronto te contactaremos.">
-</form>
-</section>
-<section id=footer>
-<div class="m-auto d-block text-center">
-<div class=footer-socials>
-<p>RESERVAS LLAMAR AL 3153964259</p>
-<p class=text-center>SIGUENOS EN NUESTRAS REDES SOCIALES!</p>
-<br>
-<a href=https://www.facebook.com/Mastertouch-106027588871957><img src=img/facebook-brands.svg alt></a>
-<a href=https://www.instagram.com/raulcaro99/><img src=img/instagram-brands.svg alt></a>
-<a href=https://twitter.com/raulcaro99><img src=img/twitter-square-brands.svg alt></a>
-</div>
-<p class="m-auto d-block credentials mt-5 p-2 m-2">© 2022 MASTERTOUCH AGENCIA DE TRANSPORTES TERRESTRES</p>
-</div>
-</section>
-<script src=https://unpkg.com/aos@2.3.1/dist/aos.js></script>
-<script src=https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js></script>
-<script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js></script>
-<script src=js/script.js></script>
-<script src=js/suggestions.js></script>
-</body>
+  <head>
+    <meta charset=UTF-8>
+    <meta name=language content=spanish>
+    <meta name=viewport content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=1">
+    <meta name=copyright content="Pagina Web mastertouch.co.nz">
+    <meta name=author content="Raul Caro">
+    <meta name=audience content=all>
+    <meta name=description content="Descripcion longitud 150 y 160">
+    <meta name=keywords content="mastertouch, viajes, trips">
+    <meta name=robots content="index, all, follow">
+    <meta name=category content=viajes>
+    <link rel=icon type=image/x-icon href=img/colombia-icon.png>
+    <meta itemprop=telephone content="+57 3153964259">
+    <title>Mastertouch | Nacimos para Viajar</title>
+    <link href=https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css rel=stylesheet>
+    <link href=https://getbootstrap.com/docs/5.3/assets/css/docs.css rel=stylesheet>
+    <link href=https://unpkg.com/aos@2.3.1/dist/aos.css rel=stylesheet>
+    <link rel=stylesheet href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel=stylesheet href=css/style.css>
+    <script src=https://kit.fontawesome.com/3c98501c58.js crossorigin=anonymous></script>
+  </head>
+  <body id=start data-site-search>
+    <div class=home-nav>
+      <ul class=p-2>
+        <li>
+          <a href=#start>
+            <div class=logo></div>
+          </a>
+        </li>
+      </ul>
+      <ul class="p-2 second-ul">
+        <li class=li-abt>
+          <a href="https://master--touch-co-nz.translate.goog/?_x_tr_sl=es&_x_tr_tl=en&_x_tr_hl=en-US&_x_tr_pto=wapp">TRANSLATE</a>
+        </li>
+        <li class=li-abt>
+          <a href=#eventos>EVENTOS</a>
+        </li>
+        <li class=li-abt>
+          <a href=#services>SERVICIOS</a>
+        </li>
+        <li class=li-abt>
+          <a href=#quienes>QUIENES SOMOS</a>
+        </li>
+        <li class=li-abt>
+          <a href=#contacto>CONTACTO</a>
+        </li>
+        <li class=menu-position>
+          <i class="fa-solid fa-bars menu-icon"></i>
+        </li>
+      </ul>
+    </div>
+    <div class=sec-nav>
+      <ul>
+        <li>
+          <a href=#eventos>EVENTOS</a>
+        </li>
+        <li>
+          <a href=#services>SERVICIOS</a>
+        </li>
+        <li>
+          <a href=#quienes>QUIENES SOMOS</a>
+        </li>
+        <li>
+          <a href=#contacto>CONTACTO</a>
+        </li>
+        <li>
+          <a href="https://master--touch-co-nz.translate.goog/?_x_tr_sl=es&_x_tr_tl=en&_x_tr_hl=en-US&_x_tr_pto=wapp">TRANSLATE</a>
+        </li>
+        <section class=container>
+          <form>
+            <input type=search class=search id=search-item value placeholder=Buscar onkeyup=search()>
+            <i class="fa-solid fa-magnifying-glass loop-icon"></i>
+          </form>
+          <div class=event-list id=event-list>
+            <div class=event>
+              <div class=e-details>
+                <a href=ecotourHuila.html>
+                  <h3>Tour a Huila I</h3>
+                </a>
+              </div>
+            </div>
+            <div class=event>
+              <div class=e-details>
+                <a href=ecotourHuila2.html>
+                  <h3>Tour a Huila II</h3>
+                </a>
+              </div>
+            </div>
+            <div class=event>
+              <div class=e-details>
+                <a href=barichara.html>
+                  <h3>Tour en Barichara</h3>
+                </a>
+              </div>
+            </div>
+            <div class=event>
+              <div class=e-details>
+                <a href=tourEuropa.html>
+                  <h3>Tour por Europa OtoÃ±al</h3>
+                </a>
+              </div>
+            </div>
+            <div class=event>
+              <div class=e-details>
+                <a href=lajas-dos.html>
+                  <h3>Tour a Santuario Las Lajas I</h3>
+                </a>
+              </div>
+            </div>
+            <div class=event>
+              <div class=e-details>
+                <a href=lajas-dos.html>
+                  <h3>Tour a Santuario Las Lajas II</h3>
+                </a>
+              </div>
+            </div>
+            <div class=event>
+              <div class=e-details>
+                <a href=VillaDeLeyva.html>
+                  <h3>Tour a Villa de Leyva, Boyaca Colombia</h3>
+                </a>
+              </div>
+            </div>
+            <div class=event>
+              <div class=e-details>
+                <a href=antiguaBogota.html>
+                  <h3>Tour a la Antigua Bogota</h3>
+                </a>
+              </div>
+            </div>
+            <div class=event>
+              <div class=e-details>
+                <a href=colibries.html>
+                  <h3>Tour al Templo de los Colibries</h3>
+                </a>
+              </div>
+            </div>
+            <div class=event>
+              <div class=e-details>
+                <a href=EcotourParamo.html>
+                  <h3>Tour al Paramo de Sumapaz</h3>
+                </a>
+              </div>
+            </div>
+            <div class=event>
+              <div class=e-details>
+                <a href=MuseoBonzai.html>
+                  <h3>Tour al Museo de los Bonsai</h3>
+                </a>
+              </div>
+            </div>
+            <div class=event>
+              <div class=e-details>
+                <a href=cactus.html>
+                  <h3>Tour de Cactus y Suculentas</h3>
+                </a>
+              </div>
+            </div>
+            <div class=event>
+              <div class=e-details>
+                <a href=EcotourTermales.html>
+                  <h3>Tour en termales los volcanes</h3>
+                </a>
+              </div>
+            </div>
+            <div class=event>
+              <div class=e-details>
+                <a href=JardinMutis.html>
+                  <h3>Tour a Jardin Botanico Sabio Mutis"</h3>
+                </a>
+              </div>
+            </div>
+            <div class=event>
+              <div class=e-details>
+                <a href=brillaColombia.html>
+                  <h3>Tour de luces en Bogota Colombia"</h3>
+                </a>
+              </div>
+            </div>
+            <div class=event>
+              <div class=e-details>
+                <a href=tour-navi.html>
+                  <h3>Tour de Navidad en Tomine</h3>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </ul>
+    </div>
+    <!-- <div id=hero>
+      <video playsinline autoplay loop muted>
+        <source src=col-vodeo.mp4 type=video/mp4>
+        <source src=col-vodeo.mov type=video/mov>
+        <source src=col-vodeo.webm type=video/webm>
+        <source src=col-vodeo.wmv type=video/wmv> Your browser does not support the video tag.
+      </video>
+      <div class=caption>
+        <img data-aos=zoom-in class=logo-banner src=img/whitenobg-logo.png alt>
+        <h2 data-aos=zoom-in class="titulo-banner text-center font-weight-bold text-white">NACIMOS PARA <br> VIAJAR </h2>
+        <a href="https://master--touch-co-nz.translate.goog/index.html?_x_tr_sl=es&_x_tr_tl=en&_x_tr_hl=en-US&_x_tr_pto=wapp" class="btn btn-danger"> English <i class="fa-solid fa-globe"></i>
+        </a>
+        <a href=https://www.paypal.com/ncp/payment/96GU64H9EZUR2>
+          <button class="button-banner mt-2 text-white m-auto d-block">RESERVAR YA</button>
+        </a>
+        <a href=#eventos>
+          <i class="arrow-banner text-white fa-solid fa-angle-down"></i>
+        </a>
+      </div>
+      <a href="https://api.whatsapp.com/send?phone=573153964259">
+        <img class=sticky src=img/icons8-whatsapp-48.png alt>
+      </a>
+    </div> -->
+    <section id=services>
+      <div class="transfer">
+        <div class="serv-content text-white text-left">
+          <h1 data-aos=flip-left>TRASLADOS DESDE AEROPUERTO A HOTEL</h1>
+          <p data-aos=fade-left>Te recogemos en el aeropuerto y te dejamos direcamtente en el 
+            <br> hotel y viceversa. Durante su permanencia estamos a su disposicion para los tours que deseen, <br> Servicio rapido y efectivo. 
+            <a class="orange" href="#eventos">ver eventos</a>
+          </p>
+          <a href="https://api.whatsapp.com/send?phone=573153964259">
+            <button class=btn-detalles2>Reservar</button>
+          </a>
+        </div>
+      </div>
+      <div class="ecotour">
+        <div class="serv-content text-white text-left">
+          <h1 data-aos=flip-left>MULTIPLES EVENTOS</h1>
+          <p data-aos=fade-left>Te llevaremos a visitar lugares para disfrutar de la naturaleza y 
+            <br> cultura colombiana</p>
+            <a href="#eventos">
+            <button class=btn-detalles2>Detalles</button>
+            </a>
+        </div>
+      </div>
+        <div class="guide">
+          <div class="serv-content text-white text-left">
+            <h1 data-aos=flip-left>GUIANZA</h1>
+            <p data-aos=fade-left>Mastertouch es una empresa comprometida en transportar, 
+              <br> guiar y asesorar al cliente con calidad, en forma oportuna.</p>
+              <a href="#quienes">
+                <button class=btn-detalles2>Detalles</button>
+              </a>
+          </div>
+          <a href="https://api.whatsapp.com/send?phone=573153964259">
+            <img class=sticky src=img/icons8-whatsapp-48.png alt>
+          </a>
+        </div>
+    </section>
+    <section id=eventos>
+      <h1 class="text-center mb-5 font-weight-bold">EVENTOS</h1>
+      <div data-aos=fade-down class="row text-center">
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <img class=img-huila src=img/llanos-12.jpeg alt=image>
+          <h2>Tour a los llanos</h2>
+          <a href=llanos.html>
+            <button class=btn-detalles>Detalles</button>
+          </a>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <img class=img-huila src=img/huila-11.jpg alt=image>
+          <h2>Tour a Huila I</h2>
+          <a href=ecotourHuila.html>
+            <button class=btn-detalles>Detalles</button>
+          </a>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <img class=img-huila src=img/dark-huila.png alt=image>
+          <h2>Tour a Huila II</h2>
+          <a href=ecotourHuila2.html>
+            <button class=btn-detalles>Detalles</button>
+          </a>
+        </div>
+      </div>
+      <div data-aos=fade-down class="row text-center">
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <img class=img-thumbnail src=img/tour-europa.jpg alt=image>
+          <h2>Tour a Europa</h2>
+          <a href=tourEuropa.html>
+            <button class=btn-detalles>Detalles</button>
+          </a>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <img class=img-thumbnail src=img/lajas-1.jpg alt=image>
+          <h2>Tour a Santuario Las Lajas I</h2>
+          <a href=TourLajas.html>
+            <button class=btn-detalles>Detalles</button>
+          </a>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <img class=img-thumbnail src=img/laj-tres-6.jpg alt=image>
+          <h2>Tour a Santuario Las Lajas II</h2>
+          <a href=lajas-dos.html>
+            <button class=btn-detalles>Detalles</button>
+          </a>
+        </div>
+      </div>
+      <div data-aos=fade-down class="row text-center">
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <img class=img-thumbnail src=img/villa-de-leyva.jpg alt=image>
+          <h2>Tour a Villa de Leyva, Boyaca Colombia</h2>
+          <a href=VillaDeLeyva.html>
+            <button class=btn-detalles>Detalles</button>
+          </a>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <img class=img-thumbnail src=img/coibris.jpg alt=image>
+          <h2>Tour al Templo de los Colibries</h2>
+          <a href=colibries.html>
+            <button class=btn-detalles>Detalles</button>
+          </a>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <img class=img-thumbnail src=img/bogota.jpg alt=image>
+          <h2>Tour a la Antigua Bogota</h2>
+          <a href=antiguaBogota.html>
+            <button class=btn-detalles>Detalles</button>
+          </a>
+        </div>
+      </div>
+      <div data-aos=fade-down class="row text-center">
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <img class=img-thumbnail src=img/tour-nav-15.jpg alt=image>
+          <h2>Tour de Navidad en Tomine</h2>
+          <a href=tour-navi.html>
+            <button class=btn-detalles>Detalles</button>
+          </a>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <img class=img-thumbnail src=img/sumapaz.jpg alt=image>
+          <h2>Tour al Paramo de Sumapaz</h2>
+          <a href=EcotourParamo.html>
+            <button class=btn-detalles>Detalles</button>
+          </a>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <img class=img-thumbnail src=img/bonsai-3.jpg alt=image>
+          <h2>Tour al Museo de los Bonsai</h2>
+          <a href=MuseoBonzai.html>
+            <button class=btn-detalles>Detalles</button>
+          </a>
+        </div>
+      </div>
+      <div data-aos=fade-down class="row text-center">
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <img class=img-thumbnail src=img/cactus.jpg alt=image>
+          <h2>Tour de Cactus y Suculentas</h2>
+          <a href=cactus.html>
+            <button class=btn-detalles>Detalles</button>
+          </a>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <img class=img-thumbnail src=img/volcanes.jpg alt=image>
+          <h2>Tour en termales los volcanes</h2>
+          <a href=EcotourTermales.html>
+            <button class=btn-detalles>Detalles</button>
+          </a>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <img class=img-thumbnail src=img/mutis.jpg alt=image>
+          <h2>Tour a Jardin Botanico Sabio Mutis</h2>
+          <a href=JardinMutis.html>
+            <button class=btn-detalles>Detalles</button>
+          </a>
+        </div>
+      </div>
+      <div data-aos=fade-down class="row text-center">
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <img class=img-huila src=img/brilla-1.png alt=image>
+          <h2>Tour de luces en Bogota Colombia</h2>
+          <a href=brillaColombia.html>
+            <button class=btn-detalles>Detalles</button>
+          </a>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <img class=img-huila src=img/bari-banner.jpg alt=image>
+          <h2>Tour a Barichara</h2>
+          <a href=barichara.html>
+            <button class=btn-detalles>Detalles</button>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id=quienes>
+      <div class=quien-banner>
+        <h1 class="quien-title text-white text-center">QUIENES SOMOS</h1>
+        <div class="row quienes-content">
+          <div class="quien-icons col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+            <img data-aos-delay=600 data-aos=flip-right class=img-thumbnail2 src=img/thumbs-up.png alt>
+            <h2 class="p-2 mt-2">CONFIANZA</h2>
+          </div>
+          <div class="quien-icons col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+            <img data-aos-delay=800 data-aos=flip-right class=img-thumbnail2 src=img/icons8-tick-box-50.png alt>
+            <h2 class="p-2 mt-2">SEGURIDAD</h2>
+          </div>
+          <div class="quien-icons col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+            <img data-aos-delay=1000 data-aos=flip-right class=img-thumbnail2 src=img/icons8-heart-50.png alt>
+            <h2 class="p-2 mt-2">PASION</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row my-5">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+          <div class="m-2 p-2">
+            <p data-aos-delay=600 data-aos=fade-right class="quien-para p-5"> Mastertouch es una empresa comprometida en transportar, guiar y asesorar al cliente con calidad, en forma oportuna, proporcionandole un alto nivel de satisfaccion en el servicio, contando con un grupo humano capacitado y altamente comprometido para lograr los objetivos de nuestra gestion a traves de procesos de mejoramiento continuo y creacion de valores. Contamos con excelentes vehiculos climatizados, automoviles y vans. Nuestra amplia experiencia en el sector nos permite garantizar un excelente servicio. <br>
+              <br> Somos apasionados por viajar y brindar experiencias inolvidables, llevamos a ciudadanos y turistas a conocer la cultura colombiana y la gran gastronomia que ofrece. Tenemos una gran cercania con la espiritualidad y la naturaleza. Por lo tanto damos espacios para la meditacion en templos alrededor de Colombia. Nuestros planes incluyen eco tours, caminatas, exhibiciones y lugares iconicos que no se pueden perder. Estamos mas que felices por mostrarte lo maravillosa que Colombia puede ser.
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+          <div data-aos-delay=1000 data-aos=fade-left class=galleria-fotos>
+            <div id=carouselExampleIndicators class="carousel slide">
+              <div class=carousel-indicators>
+                <button type=button data-bs-target=#carouselExampleIndicators data-bs-slide-to=0 class=active aria-current=true aria-label="Slide 1"></button>
+                <button type=button data-bs-target=#carouselExampleIndicators data-bs-slide-to=1 aria-label="Slide 2"></button>
+                <button type=button data-bs-target=#carouselExampleIndicators data-bs-slide-to=2 aria-label="Slide 3"></button>
+                <button type=button data-bs-target=#carouselExampleIndicators data-bs-slide-to=3 aria-label="Slide 4"></button>
+                <button type=button data-bs-target=#carouselExampleIndicators data-bs-slide-to=4 aria-label="Slide 5"></button>
+                <button type=button data-bs-target=#carouselExampleIndicators data-bs-slide-to=5 aria-label="Slide 6"></button>
+              </div>
+              <div class=carousel-inner>
+                <div class="carousel-item active">
+                  <img class="ca-img d-block" src=img/quienes-1.jpg alt="First slide">
+                </div>
+                <div class=carousel-item>
+                  <img class="ca-img d-block" src=img/quienes-3.jpg alt="First slide">
+                </div>
+                <div class=carousel-item>
+                  <img class="ca-img d-block" src=img/quienes-2.jpg alt="First slide">
+                </div>
+                <div class=carousel-item>
+                  <img class="ca-img d-block" src=img/quienes-4.jpg alt="First slide">
+                </div>
+                <div class=carousel-item>
+                  <img class="ca-img d-block" src=img/quienes-7.jpg alt="First slide">
+                </div>
+                <div class=carousel-item>
+                  <img class="ca-img d-block" src=img/quienes-6.jpg alt="First slide">
+                </div>
+              </div>
+              <button class=carousel-control-prev type=button data-bs-target=#carouselExampleIndicators data-bs-slide=prev>
+                <span class=carousel-control-prev-icon aria-hidden=true></span>
+                <span class=visually-hidden>Previous</span>
+              </button>
+              <button class=carousel-control-next type=button data-bs-target=#carouselExampleIndicators data-bs-slide=next>
+                <span class=carousel-control-next-icon aria-hidden=true></span>
+                <span class=visually-hidden>Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id=contacto>
+      <h1 class="contact-title text-center text-white">CONTACTO</h1>
+      <form class="myForm p-5 text-white" id=section-2 action=https://formsubmit.co/24cdc782acbce6c87c8ea07ab5571286 method=POST>
+        <div class="mb-3 frm-w">
+          <label for=exampleInputEmail1 class=form-label>Nombre</label>
+          <input type=text name=name class=form-control id=exampleInputEmail1 aria-describedby=emailHelp>
+        </div>
+        <div class="mb-3 frm-w">
+          <label for=exampleInputEmail1 class=form-label>Correo</label>
+          <input name=email type=email class=form-control id=exampleInputEmail1 aria-describedby=emailHelp required>
+          <div id=emailHelp class="text-white form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3 frm-w">
+          <label for=validationTextarea class=form-label>Mensaje</label>
+          <textarea name=message class=form-control id=validationTextarea required></textarea>
+          <div class=invalid-feedback> Please enter a message in the textarea. </div>
+        </div>
+        <button type=submit class=btn-detalles value="Send Form">Enviar</button>
+        <input type=hidden name=_next value=https://master-touch.co.nz//thank-you.html>
+        <input type=hidden name=_subject value="New submission!">
+        <input type=hidden name=_captcha value=false>
+        <input type=hidden name=_autoresponse value="Gracias por contactarnos, revisaremos tu solicitud y pronto te contactaremos.">
+      </form>
+    </section>
+    <section id=footer>
+      <div class="m-auto d-block text-center">
+        <div class=footer-socials>
+          <p>RESERVAS LLAMAR AL 3153964259</p>
+          <p class=text-center>SIGUENOS EN NUESTRAS REDES SOCIALES!</p>
+          <br>
+          <a href=https://www.facebook.com/Mastertouch-106027588871957>
+            <img src=img/facebook-brands.svg alt>
+          </a>
+          <a href=https://www.instagram.com/raulcaro99 />
+          <img src=img/instagram-brands.svg alt>
+          </a>
+          <a href=https://twitter.com/raulcaro99>
+            <img src=img/twitter-square-brands.svg alt>
+          </a>
+        </div>
+        <p class="m-auto d-block credentials mt-5 p-2 m-2">© 2022 MASTERTOUCH AGENCIA DE TRANSPORTES TERRESTRES</p>
+      </div>
+    </section>
+    <script src=https://unpkg.com/aos@2.3.1/dist/aos.js></script>
+    <script src=https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js></script>
+    <script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js></script>
+    <script src=js/script.js></script>
+    <script src=js/suggestions.js></script>
+  </body>
 </html>
