@@ -127,7 +127,8 @@ p {
 }
 
 #contacto {
-    background-image: url("../img/mount.png");
+    /* background-image: url("../img/mount.png"); */
+    background-image: url("../img/dark-col-banner-contact.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
