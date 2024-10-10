@@ -436,7 +436,8 @@ video {
     padding: 20px;
     background: #000;
     width: 105%;
-    height: 108px;
+    /* height: 108px; */
+    height: 86px;
     position: fixed;
     z-index: 30;
     top: 0
@@ -444,14 +445,16 @@ video {
 
 .second-ul {
     float: right;
-    margin-top: -140px
+    /* margin-top: -140px; */
+    margin-top: -130px;
 }
 
 .home-nav li {
     list-style: none;
     padding: 15px;
     display: inline-block;
-    margin-top: 15px;
+    /* margin-top: 15px; */
+    margin-top: 5px;
     margin-right: 20px
 }
 
@@ -469,7 +472,8 @@ video {
     padding: 10px;
     margin: 10px;
     position: absolute;
-    top: 8%;
+    /* top: 8%; */
+    top: 6%;
     right: 7%;
     cursor: pointer
 }
@@ -512,7 +516,8 @@ video {
 }
 
 .transfer {
-    margin-top: 108px;
+    /* margin-top: 108px; */
+    margin-top: 86px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -553,7 +558,7 @@ video {
 
 .sec-nav {
     position: fixed;
-    top: 100px;
+    top: 80px;
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -840,13 +845,15 @@ input::placeholder {
     }
 
     .home-nav {
-        height: 210px
+        /* height: 210px; */
+        height: 173px;
+        border: 1px solid blue;
     }
 
     .home-nav li {
         padding: 10px;
         margin-top: 38px;
-        margin-right: 17px
+        margin-right: 17px;
     }
 
     .titulo-banner {
@@ -891,7 +898,8 @@ input::placeholder {
     }
 
     .second-ul {
-        margin-top: -156px;
+        /* margin-top: -156px; */
+        margin-top: -173px;
         margin-right: 71px
     }
 
@@ -903,6 +911,16 @@ input::placeholder {
         padding: 22px;
         width: 248px;
         font-size: 25px
+    }
+
+    .transfer {
+        margin-top: 180px;
+        height: 700px;
+        border: 1px solid red;
+    }
+
+    .guide, .ecotour {
+        height: 700px;
     }
 }
 
