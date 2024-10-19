@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat&display=swap);
-@import url(https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap);
+/* KNENAWAVE  */
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+
 
 * {
     box-sizing: border-box;
@@ -93,8 +95,11 @@ html {
 }
 
 h1 {
-    font-family: "DM Serif Display", serif;
+    font-family: "Knewave", system-ui;
+    font-weight: 400;
+    font-style: normal;
     font-size: 40px;
+    text-transform: uppercase;
 }
 
 p {
@@ -106,6 +111,12 @@ p {
 .img-huila:hover,
 .img-thumbnail:hover {
     transform: scale(1.1)
+}
+
+.fa-globe {
+    font-size: 18px;
+    margin-right: 7px;
+    color: white;
 }
 
 #eventos,
@@ -776,10 +787,6 @@ input::placeholder {
         height: 1100px
     }
 
-    .quien-banner {
-        height: 900px
-    }
-
     li,
     p {
         font-size: 35px
@@ -794,13 +801,20 @@ input::placeholder {
         padding: 19px
     }
 
+    .quien-banner {
+        height: 900px
+    }
+
+    .fa-globe {
+        font-size: 34px;
+    }
+
     .contact-title {
         padding-top: 190px
     }
 
     .home-nav {
         height: 173px;
-        border: 1px solid blue;
     }
 
     .home-nav li {
@@ -858,7 +872,6 @@ input::placeholder {
     .transfer {
         margin-top: 180px;
         height: 700px;
-        border: 1px solid red;
     }
 
     .guide, .ecotour {
@@ -924,6 +937,10 @@ input::placeholder {
 
 @media only screen and (max-width:964px) {
 
+    .quien-banner {
+        height: 380px;
+    }
+
     #gallery h1,
     .fal-title {
         font-size: 37px;
@@ -947,7 +964,7 @@ input::placeholder {
     .quien-title {
         font-size: 35px;
         position: absolute;
-        top: 30%
+        top: 37%
     }
 
     .quien-para {
@@ -1046,7 +1063,7 @@ input::placeholder {
 
     .contact-title {
         padding-bottom: 35px;
-        text-shadow: 2px 2px 2px black;
+        text-shadow: 3px 3px 3px black;
     }
 
     .img-huila {
@@ -1067,6 +1084,10 @@ input::placeholder {
 
     .transfer {
         height: 583px;
+    }
+
+    #gallery h1, .fal-title {
+        font-size: 25px;
     }
 }
 
