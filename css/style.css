@@ -317,9 +317,9 @@ video {
 
 .sticky {
     position: fixed;
-    width: 4%;
+    width: 54px;
     height: auto;
-    top: 83%;
+    top: 78%;
     left: 89%;
     cursor: pointer;
     z-index: 30
@@ -878,6 +878,8 @@ input::placeholder {
     .sticky {
         position: fixed;
         top: 82%;
+        width: 91px;
+        height: auto;
     }
 
     .serv-content {
@@ -931,10 +933,6 @@ input::placeholder {
 
     .quien-para {
         margin-top: 33px
-    }
-
-    .sticky {
-        width: 7%
     }
 
     video {
@@ -1016,8 +1014,8 @@ input::placeholder {
     }
 
     .sticky {
+        position: fixed;
         left: 80%;
-        width: 11%;
     }
 
     .footer-socials img {
@@ -1040,10 +1038,6 @@ input::placeholder {
         position: absolute;
         top: 24%;
     }
-
-    /* .sec-nav {
-        padding-top: 51%;
-    } */
 
     .img-huila {
         height: 210px;
