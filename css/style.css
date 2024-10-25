@@ -527,10 +527,14 @@ video {
     opacity: .9
 }
 
+.sec-nav ul {
+    margin-bottom: -250px;
+}
+
 .sec-nav li {
     list-style: none;
     font-size: 1rem;
-    padding: .5rem
+    padding: .5rem;
 }
 
 .sec-nav li:hover {
@@ -1037,9 +1041,9 @@ input::placeholder {
         top: 24%;
     }
 
-    .sec-nav {
+    /* .sec-nav {
         padding-top: 51%;
-    }
+    } */
 
     .img-huila {
         height: 210px;
