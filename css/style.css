@@ -100,6 +100,7 @@ h1 {
     font-style: normal;
     font-size: 40px;
     text-transform: uppercase;
+    text-shadow: 3px 3px 3px black;
 }
 
 p {
@@ -119,6 +120,11 @@ p {
     color: white;
 }
 
+.contact-title {
+    padding-bottom: 35px;
+    text-shadow: 3px 3px 3px black;
+}
+
 #eventos,
 #gallery,
 .galleria-fotos {
@@ -133,12 +139,11 @@ p {
 }
 
 #bari-banner {
-    background-image: url("../img/bari-banner-dark.png");
+    background-image: url("../img/barichara/bari-banner-dark.png");
     width: 100%
 }
 
 #contacto {
-    /* background-image: url("../img/mount.png"); */
     background-image: url("../img/contact-mask.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -147,97 +152,85 @@ p {
     height: 700px
 }
 
-#banner {
-    background-image: url("../img/dark-house.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    width: 100%;
-    height: 700px
-}
-
 #villa-banner {
-    background-image: url("../img/vila.png");
+    background-image: url("../img/villa-de-leyva/vila.png");
     width: 100%
 }
 
 #europa-banner {
-    background-image: url("../img/dark-portugal-banner.png");
+    background-image: url("../img/europa/dark-portugal-banner.png");
     width: 100%
 }
 
 #volcanes-banner {
-    background-image: url("../img/termales-2.jpg");
+    background-image: url("../img/termales/termales-11.jpg");
     width: 100%
 }
 
 #mutis-banner {
-    background-image: url("../img/mutis-dark-3.png");
+    background-image: url("../img/mutis/mutis-dark-3.png");
     width: 100%
 }
 
 #cactus-banner {
-    background-image: url("../img/dark-cactus.jpg");
+    background-image: url("../img/cactus/dark-cactus.jpg");
     width: 100%
 }
 
 #llanos-banner {
-    background-image: url("../img/llanos-12.jpeg");
+    background-image: url("../img/llanos/llanos-12.jpeg");
     width: 100%
 }
 
+/* colibris  */
 #col-banner {
-    background-image: url("../img/darkcol-8.png");
+    background-image: url("../img/colibris/darkcol-8.png");
     width: 100%
 }
 
 #bogota-banner {
-    background-image: url("../img/bogota-banner.png");
+    background-image: url("../img/bogota/bogota-banner.png");
     width: 100%
 }
 
 #paramo-banner {
-    background-image: url("../img/sumapaz-banner.png");
+    background-image: url("../img/sumapaz/sumapaz-banner.png");
     width: 100%
 }
 
 #brilla-banner {
-    background-image: url("../img/brilla-1.png");
+    background-image: url("../img/brilla-colombia/brilla-1.png");
     width: 100%
 }
 
 #lajas-banner {
-    background-image: url("../img/dark-lajas.png");
+    background-image: url("../img/lajas/dark-lajas.png");
     width: 100%
 }
 
-#termal-banner {
-    background-image: url("../img/dark-termal.png");
-    width: 100%
-}
-
+/* lajas 2 */
 #suezia-banner {
-    background-image: url("../img/banner-3-lajas.png");
+    background-image: url("../img/lajas/banner-3-lajas.png");
     width: 100%
 }
 
 #bonsai-banner {
-    background-image: url("../img/dark-bonsai-1.png");
+    background-image: url("../img/bonsai/dark-bonsai-1.png");
     width: 100%
 }
 
 #navi-banner {
-    background-image: url("../img/tour-darknav-15.png");
+    background-image: url("../img/navidad/tour-darknav-15.png");
     width: 100%
 }
 
 #huila-banner {
-    background-image: url("../img/huila-11.jpg");
+    background-image: url("../img/huila/huila-11.jpg");
     width: 100%
 }
 
 #huila2-banner {
-    background-image: url("../img/dark-huila.png");
+    background-image: url("../img/huila/dark-huila.png");
     width: 100%
 }
 
@@ -289,7 +282,7 @@ p {
 
 .serv-content {
     position: absolute;
-    top: 18%;
+    top: 32%;
     left: 8%;
 }
 
@@ -326,7 +319,7 @@ video {
     position: fixed;
     width: 4%;
     height: auto;
-    top: 87%;
+    top: 83%;
     left: 89%;
     cursor: pointer;
     z-index: 30
@@ -401,9 +394,8 @@ video {
 
 .home-nav {
     padding: 20px;
-    background: #000;
+    background: none;
     width: 105%;
-    /* height: 108px; */
     height: 86px;
     position: fixed;
     z-index: 30;
@@ -412,7 +404,6 @@ video {
 
 .second-ul {
     float: right;
-    /* margin-top: -140px; */
     margin-top: -130px;
 }
 
@@ -445,7 +436,7 @@ video {
 }
 
 .logo {
-    background: url("../img/whitenobg-logo.png") center/contain no-repeat;
+    background: url("../img/logos/whitenobg-logo.png") center/contain no-repeat;
     margin-top: -40px;
     margin-left: -19px;
     width: 180px;
@@ -482,11 +473,12 @@ video {
 }
 
 .transfer {
-    margin-top: 86px;
+    margin-top: 0px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 500px
+    height: 700px;
+    z-index: 10;
 }
 
 .content {
@@ -514,7 +506,7 @@ video {
 }
 
 .transfer {
-    background-image: url("../img/van-dark.png")
+    background-image: url("../img/dark-master.jpg")
 }
 
 .ecotour {
@@ -523,7 +515,7 @@ video {
 
 .sec-nav {
     position: fixed;
-    top: 80px;
+    top: 0;
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -686,7 +678,7 @@ input::placeholder {
 }
 
 .quien-banner {
-    background-image: url("../img/quien.png");
+    background-image: url("../img/quienes/quien.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -797,7 +789,7 @@ input::placeholder {
     }
 
     h2 {
-        font-size: 3rem;
+        font-size: 2rem;
         padding: 19px
     }
 
@@ -870,12 +862,24 @@ input::placeholder {
     }
 
     .transfer {
-        margin-top: 180px;
-        height: 700px;
+        height: 1220px;
+        margin-top: 0px;
+        z-index: 10;
     }
 
     .guide, .ecotour {
         height: 700px;
+    }
+
+    .sticky {
+        position: fixed;
+        top: 82%;
+    }
+
+    .serv-content {
+        position: absolute;
+        top: 32%;
+        left: 8%;
     }
 }
 
@@ -1032,6 +1036,14 @@ input::placeholder {
         position: absolute;
         top: 24%;
     }
+
+    .sec-nav {
+        padding-top: 51%;
+    }
+
+    .img-huila {
+        height: 210px;
+    }
 }
 
 @media only screen and (max-width:430px) {
@@ -1064,15 +1076,6 @@ input::placeholder {
     .iframe-container,
     .iframe-container iframe {
         height: 600px;
-    }
-
-    .contact-title {
-        padding-bottom: 35px;
-        text-shadow: 3px 3px 3px black;
-    }
-
-    .img-huila {
-        height: auto;
     }
 
     .serv-content {

@@ -53,6 +53,19 @@ $(document).ready(function() {
   $("#event-list").hide();
 });
 
+// navbar bg change when scrolling 
+$(document).ready(function(){
+  $(window).scroll(function(){
+      if($(window).scrollTop() > 100){
+          $(".home-nav").css({"background-color":"black", "opacity":"95%"});   
+      }
+      else{
+          $(".home-nav").css({"background-color":""});
+      }
+
+  })
+})
+
 // Two images side by side
 function two() {
   for (i = 0; i < elements.length; i++) {
