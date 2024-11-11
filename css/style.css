@@ -330,7 +330,7 @@ video {
     position: fixed;
     width: 54px;
     height: auto;
-    top: 78%;
+    top: 85%;
     left: 89%;
     cursor: pointer;
     z-index: 30
@@ -488,7 +488,7 @@ video {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 700px;
+    height: 100vh;
     z-index: 10;
 }
 
@@ -877,7 +877,7 @@ input::placeholder {
     }
 
     .transfer {
-        height: 1220px;
+        /* height: 1220px; */
         margin-top: 0px;
         z-index: 10;
     }
