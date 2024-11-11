@@ -77,7 +77,8 @@ video {
 #suezia-banner,
 #termal-banner,
 #villa-banner,
-#volcanes-banner {
+#volcanes-banner,
+#paraiso-banner {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -106,7 +107,8 @@ video {
 #termal-banner,
 #villa-banner,
 #volcanes-banner,
-#we-colombia {
+#we-colombia,
+#paraiso-banner {
     position: relative
 }
 
@@ -145,6 +147,11 @@ video {
     margin-bottom: 20px;
     transition: 1s;
     cursor: pointer
+}
+
+#paraiso-banner {
+    background-image: url("../img/paraiso/dark-paraiso.jpg");
+    width: 100%
 }
 
 #bari-banner {
@@ -686,7 +693,7 @@ input::placeholder {
 }
 
 .quien-banner {
-    background-image: url("../img/quienes/quien.png");
+    background-image: url("../img/villa-de-leyva/paula-prieto-jJT8x2T8NHo-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
