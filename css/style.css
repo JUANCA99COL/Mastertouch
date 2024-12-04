@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat&display=swap);
 /* KNENAWAVE  */
-@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Tilt+Warp&display=swap');
 
 
 * {
@@ -43,7 +44,8 @@ html {
 }
 
 h1 {
-    font-family: "Knewave", system-ui;
+    font-family: "Tilt Warp", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-size: 40px;
@@ -416,6 +418,8 @@ video {
 .second-ul {
     float: right;
     margin-top: -130px;
+    margin-right: 99px;
+    /* margin-right: 60px; */
 }
 
 .home-nav li {
@@ -443,13 +447,14 @@ video {
     position: absolute;
     top: 6%;
     right: 7%;
+    /* right: 12%; */
     cursor: pointer
 }
 
 .logo {
     background: url("../img/logos/whitenobg-logo.png") center/contain no-repeat;
     margin-top: -40px;
-    margin-left: -19px;
+    margin-left: 60px;
     width: 180px;
     height: 80px
 }
@@ -909,6 +914,10 @@ input::placeholder {
     .menu-position {
         visibility: visible;
         display: block
+    }
+
+    .logo {
+        margin-left: -21px;
     }
 }
 
