@@ -1,6 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat&display=swap);
-/* KNENAWAVE  */
-/* @import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap'); */
+/* Tilt Warp */
 @import url('https://fonts.googleapis.com/css2?family=Freeman&family=Tilt+Warp&display=swap');
 
 
@@ -1036,6 +1035,7 @@ input::placeholder {
     .sticky {
         position: fixed;
         left: 80%;
+        width: 40px;
     }
 
     .footer-socials img {
