@@ -881,7 +881,6 @@ input::placeholder {
     }
 
     .transfer {
-        /* height: 1220px; */
         margin-top: 0px;
         z-index: 10;
     }
@@ -1035,7 +1034,7 @@ input::placeholder {
     .sticky {
         position: fixed;
         left: 80%;
-        width: 40px;
+        /* width: 40px; */
     }
 
     .footer-socials img {
@@ -1109,7 +1108,7 @@ input::placeholder {
     }
 
     .transfer {
-        height: 583px;
+        height: 80vh;
     }
 
     #gallery h1, .fal-title {
