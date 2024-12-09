@@ -413,29 +413,37 @@
         </div>
       </div>
     </section>
-    <section id=contacto>
-      <h1 class="contact-title text-center text-white">CONTACTO</h1>
-      <form class="myForm p-5 text-white" id=section-2 action=https://formsubmit.co/24cdc782acbce6c87c8ea07ab5571286 method=POST>
-        <div class="mb-3 frm-w">
-          <label for=exampleInputEmail1 class=form-label>Nombre</label>
-          <input type=text name=name class=form-control id=exampleInputEmail1 aria-describedby=emailHelp>
+    <section id="contacto" class="pt-5">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <form class="myForm p-5 text-white" id=section-2 action=https://formsubmit.co/24cdc782acbce6c87c8ea07ab5571286 method=POST>
+              <h1 class="text-center text-white mb-4">CONTACTO</h1>
+              <p class="text-center text-white p-4 mb-5">Si tienes alguna duda o quieres obtener más detalles sobre nuestros servicios, nuestro equipo de profesionales está a tu disposición para asistirte en la organización de tu próximo viaje. </p>
+            <div class="mb-3 mt-5 frm-w">
+              <label for=exampleInputEmail1 class=form-label>Nombre</label>
+              <input type=text name=name class=form-control id=exampleInputEmail1 aria-describedby=emailHelp>
+            </div>
+            <div class="mb-3 frm-w">
+              <label for=exampleInputEmail1 class=form-label>Correo</label>
+              <input name=email type=email class=form-control id=exampleInputEmail1 aria-describedby=emailHelp required>
+              <div id=emailHelp class="text-white form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3 frm-w">
+              <label for=validationTextarea class=form-label>Mensaje</label>
+              <textarea name=message class=form-control id=validationTextarea required></textarea>
+              <div class=invalid-feedback> Please enter a message in the textarea. </div>
+            </div>
+            <button type=submit class=btn-detalles value="Send Form">Enviar</button>
+            <input type=hidden name=_next value=https://master-touch.co.nz//thank-you.html>
+            <input type=hidden name=_subject value="New submission!">
+            <input type=hidden name=_captcha value=false>
+            <input type=hidden name=_autoresponse value="Gracias por contactarnos, revisaremos tu solicitud y pronto te contactaremos.">
+          </form>
         </div>
-        <div class="mb-3 frm-w">
-          <label for=exampleInputEmail1 class=form-label>Correo</label>
-          <input name=email type=email class=form-control id=exampleInputEmail1 aria-describedby=emailHelp required>
-          <div id=emailHelp class="text-white form-text">We'll never share your email with anyone else.</div>
-        </div>
-        <div class="mb-3 frm-w">
-          <label for=validationTextarea class=form-label>Mensaje</label>
-          <textarea name=message class=form-control id=validationTextarea required></textarea>
-          <div class=invalid-feedback> Please enter a message in the textarea. </div>
-        </div>
-        <button type=submit class=btn-detalles value="Send Form">Enviar</button>
-        <input type=hidden name=_next value=https://master-touch.co.nz//thank-you.html>
-        <input type=hidden name=_subject value="New submission!">
-        <input type=hidden name=_captcha value=false>
-        <input type=hidden name=_autoresponse value="Gracias por contactarnos, revisaremos tu solicitud y pronto te contactaremos.">
-      </form>
+        <!-- <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 img-contact">
+        </div> -->
+      </div>
+      
     </section>
     <section id="alianzas" class="p-5">
       <h1 class="text-white text-center my-5">ALIANZAS</h1>
@@ -447,7 +455,7 @@
     <section id=footer>
       <div class="m-auto d-block text-center">
         <div class=footer-socials>
-          <p>RESERVAS LLAMAR AL  <span class="orange">+57 3153964259</span></p>
+          <p>RESERVAS LLAMAR AL <span class="orange">+57 3153964259</span></p>
           <p class=text-center>SIGUENOS EN NUESTRAS REDES SOCIALES!</p>
           <br>
           <a href=https://www.facebook.com/Mastertouch-106027588871957>
@@ -460,7 +468,8 @@
             <img src=img/logos/twitter-square-brands.svg alt>
           </a>
         </div>
-        <p class="m-auto d-block credentials mt-5 p-2 m-2">© 2022 MASTERTOUCH AGENCIA DE TRANSPORTES TERRESTRES</p>
+        <p class="m-auto d-block credentials pt-4">Copyright © 2024 Mastertouch. All rights reserved.</p>
+        <!-- mt-5 p-2 m-2 -->
       </div>
     </section>
     <script src=https://unpkg.com/aos@2.3.1/dist/aos.js></script>

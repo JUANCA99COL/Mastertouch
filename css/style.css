@@ -88,28 +88,8 @@ video {
 }
 
 #banner,
-#bari-banner,
-#bogota-banner,
-#bonsai-banner,
-#brilla-banner,
-#cactus-banner,
-#col-banner,
 #contacto,
-#europa-banner,
-#hero,
-#huila-banner,
-#huila2-banner,
-#llanos-banner,
-#lajas-banner,
-#mutis-banner,
-#navi-banner,
-#paramo-banner,
-#suezia-banner,
-#termal-banner,
-#villa-banner,
-#volcanes-banner,
-#we-colombia,
-#paraiso-banner {
+#we-colombia {
     position: relative
 }
 
@@ -130,11 +110,6 @@ video {
     font-size: 18px;
     margin-right: 7px;
     color: white;
-}
-
-.contact-title {
-    padding-bottom: 35px;
-    text-shadow: 3px 3px 3px black;
 }
 
 #eventos,
@@ -161,12 +136,10 @@ video {
 }
 
 #contacto {
-    background-image: url("../img/contact-mask.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
     width: 100%;
-    height: 700px
+    height: auto;
+    background-color: #FC8C04;
+    /* background-color: #BA4B2D; */
 }
 
 #villa-banner {
@@ -271,7 +244,6 @@ video {
 .orange {
     color: orange;
     text-decoration: none;
-    border-bottom: 1px solid orange;
 }
 
 .img-thumbnail {
@@ -362,11 +334,6 @@ video {
     height: 100%
 }
 
-.contact-title {
-    padding-top: 100px;
-    margin-bottom: -45px
-}
-
 .btn-story {
     width: 180px;
     height: auto
@@ -451,17 +418,11 @@ video {
 }
 
 .logo {
-    background: url("../img/logos/whitenobg-logo.png") center/contain no-repeat;
-    margin-top: -40px;
-    margin-left: 60px;
-    width: 180px;
+    background: url("../img/logos/logo-master.png") center/contain no-repeat;
+    margin-top: -46px;
+    margin-left: 70px;
+    width: 90px;
     height: 80px
-}
-
-.logo-banner {
-    width: 100%;
-    height: auto;
-    margin: 10px
 }
 
 .titulo-banner {
@@ -496,6 +457,15 @@ video {
     z-index: 10;
 }
 
+.img-contact {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: auto;
+    width: 50%;
+    background-image: url("../img/banners/contact-mask.png")
+}
+
 .content {
     position: absolute;
     top: 58%
@@ -516,16 +486,8 @@ video {
     cursor: pointer
 }
 
-.guide {
-    background-image: url("../img/dark-guide.png")
-}
-
 .transfer {
-    background-image: url("../img/dark-master.jpg")
-}
-
-.ecotour {
-    background-image: url("../img/vila.png")
+    background-image: url("../img/banners/dark-master.jpg")
 }
 
 .sec-nav {
@@ -662,7 +624,8 @@ input::placeholder {
     height: 40px;
     margin: 10px 10px 70px;
     border-radius: 25px;
-    cursor: pointer
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .btn-detalles2 {
@@ -674,7 +637,8 @@ input::placeholder {
     width: 150px;
     height: 40px;
     border-radius: 25px;
-    cursor: pointer
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .btn-detalles:hover,
@@ -747,12 +711,13 @@ input::placeholder {
     outline: 0;
     border: 1px solid #000;
     color: #fff;
-    padding: .475rem .75rem
+    padding: .475rem .75rem;
+    /* width: 130%; */
 }
 
 .credentials {
     border-top: 1px solid #fff;
-    width: 70%
+    width: 70%;
 }
 
 .footer-socials {
@@ -794,9 +759,9 @@ input::placeholder {
         height: 914px
     }
 
-    #contacto {
+    /* #contacto {
         height: 1100px
-    }
+    } */
 
     li,
     p {
@@ -818,10 +783,6 @@ input::placeholder {
 
     .fa-globe {
         font-size: 34px;
-    }
-
-    .contact-title {
-        padding-top: 190px
     }
 
     .home-nav {
@@ -857,7 +818,7 @@ input::placeholder {
     }
 
     .logo {
-        margin-top: -15px;
+        margin-top: -30px;
         width: 380px
     }
 
@@ -915,18 +876,13 @@ input::placeholder {
     }
 
     .logo {
-        margin-left: -21px;
+        margin-left: -12px;
     }
 }
 
 @media only screen and (max-width:1180px) {
     .footer-socials img {
         width: 3%;
-    }
-
-    .contact-title {
-        padding-top: 105px;
-        padding-bottom: 25px
     }
 
     #gallery {
@@ -1073,17 +1029,14 @@ input::placeholder {
         top: 10%;
     }
 
-    .btn-detalles2,.btn-detalles {
-        width: 120px;
-        height: 34px;
-        font-size: 15px;
+    .logo {
+        width: 80px
     }
 
-    .logo-banner {
-        position: absolute;
-        top: -51%;
-        left: -28%;
-        width: 143%;
+    .btn-detalles2,.btn-detalles {
+        width: 90%;
+        height: 42px;
+        font-size: 15px;
     }
 
     .footer-socials img {
@@ -1117,10 +1070,6 @@ input::placeholder {
 }
 
 @media only screen and (max-width:280px) {
-    .logo {
-        width: 150px
-    }
-
     .sec-nav li {
         font-size: 1rem
     }
