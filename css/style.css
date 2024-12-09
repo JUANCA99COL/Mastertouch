@@ -856,12 +856,6 @@ input::placeholder {
         width: 91px;
         height: auto;
     }
-
-    .serv-content {
-        position: absolute;
-        top: 32%;
-        left: 8%;
-    }
 }
 
 @media only screen and (max-width:1290px) {
@@ -1050,18 +1044,14 @@ input::placeholder {
 
     .serv-content {
         position: absolute;
-        top: 20%;
-        left: -2%;
+        top: 23%;
+        left: 0%;
         text-align: center;
         padding: 33px;
     }
 
     .serv-content h1 {
         font-size: 30px;
-    }
-
-    .transfer {
-        height: 80vh;
     }
 
     #gallery h1, .fal-title {
