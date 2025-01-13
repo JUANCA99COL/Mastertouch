@@ -598,10 +598,7 @@ input::placeholder {
 
 .btn-primary {
     border: none;
-    width: 82px;
-    margin: 10px;
     background: orange;
-    border-radius: 25px
 }
 
 .fa-flag-usa {
@@ -655,19 +652,6 @@ input::placeholder {
 .btn-detalles2:hover {
     background-color: #f46434a2;
     border: none
-}
-
-.btn-danger {
-    background-color: #f46434;
-    border: none;
-    margin-bottom: 20px;
-    padding: 10px;
-    width: 160px;
-    opacity: .9
-}
-
-.btn-danger:hover {
-    background-color: #000
 }
 
 .quien-banner {
@@ -846,12 +830,6 @@ input::placeholder {
         margin-top: 12%
     }
 
-    .btn-danger {
-        padding: 22px;
-        width: 248px;
-        font-size: 25px
-    }
-
     .transfer {
         margin-top: 0px;
         z-index: 10;
@@ -987,7 +965,6 @@ input::placeholder {
 }
 
 @media only screen and (max-width:675px) {
-    .btn-danger,
     .button-banner {
         font-size: 10px;
     }
@@ -1000,10 +977,6 @@ input::placeholder {
 
     .footer-socials img {
         width: 5%;
-    }
-
-    .btn-danger {
-        width: 115px;
     }
 
     .ca-img {
