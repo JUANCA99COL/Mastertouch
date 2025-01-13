@@ -126,14 +126,15 @@ video {
 }
 
 #paraiso-banner {
-    background-image: url("../img/paraiso/dark-paraiso.jpg");
+    background-image: url("../img/paraiso/dark-paraiso-min.jpg");
     width: 100%
 }
+/* done  */
 
-#bari-banner {
+/* #bari-banner {
     background-image: url("../img/barichara/bari-banner-dark.png");
     width: 100%
-}
+} */
 
 #contacto {
     width: 100%;
@@ -143,86 +144,94 @@ video {
 }
 
 #villa-banner {
-    background-image: url("../img/villa-de-leyva/vila.png");
+    background-image: url("../img/villa-de-leyva/vila-min.jpg");
     width: 100%
 }
+/* done  */
 
 #europa-banner {
-    background-image: url("../img/europa/dark-portugal-banner.png");
+    background-image: url("../img/europa/dark-portugal-banner-min.png");
     width: 100%
 }
+/* done  */
 
-#volcanes-banner {
+/* #volcanes-banner {
     background-image: url("../img/termales/termales-11.jpg");
     width: 100%
-}
+} */
 
-#mutis-banner {
+/* #mutis-banner {
     background-image: url("../img/mutis/mutis-dark-3.png");
     width: 100%
-}
+} */
 
-#cactus-banner {
+/* #cactus-banner {
     background-image: url("../img/cactus/dark-cactus.jpg");
     width: 100%
-}
+} */
 
 #llanos-banner {
-    background-image: url("../img/llanos/llanos-12.jpeg");
+    background-image: url("../img/llanos/llanos-12-min.jpeg");
     width: 100%
 }
+/* done  */
 
 /* colibris  */
-#col-banner {
+/* #col-banner {
     background-image: url("../img/colibris/darkcol-8.png");
     width: 100%
-}
+} */
 
 #bogota-banner {
-    background-image: url("../img/bogota/bogota-banner.png");
+    background-image: url("../img/bogota/bogota-banner-min.jpg");
     width: 100%
 }
+/* done  */
 
-#paramo-banner {
+/* #paramo-banner {
     background-image: url("../img/sumapaz/sumapaz-banner.png");
     width: 100%
-}
+} */
 
-#brilla-banner {
+/* #brilla-banner {
     background-image: url("../img/brilla-colombia/brilla-1.png");
     width: 100%
-}
+} */
 
 #lajas-banner {
-    background-image: url("../img/lajas/dark-lajas.png");
+    background-image: url("../img/lajas/dark-lajas-1-min.jpg");
     width: 100%
 }
+/* done */
 
 /* lajas 2 */
 #suezia-banner {
-    background-image: url("../img/lajas/banner-3-lajas.png");
+    background-image: url("../img/lajas/dark-lajas-2-min.jpg");
     width: 100%
 }
+/* done  */
 
-#bonsai-banner {
+/* #bonsai-banner {
     background-image: url("../img/bonsai/dark-bonsai-1.png");
     width: 100%
-}
+} */
 
-#navi-banner {
+/* #navi-banner {
     background-image: url("../img/navidad/tour-darknav-15.png");
     width: 100%
-}
+} */
 
 #huila-banner {
-    background-image: url("../img/huila/huila-11.jpg");
+    background-image: url("../img/huila/huila-11-min.jpg");
     width: 100%
 }
+/* done  */
 
 #huila2-banner {
-    background-image: url("../img/huila/dark-huila.png");
+    background-image: url("../img/huila/dark-huila-min.png");
     width: 100%
 }
+/* done  */
 
 #we-colombia {
     width: 100%;
@@ -306,17 +315,18 @@ video {
     top: 85%;
     left: 89%;
     cursor: pointer;
-    z-index: 30
+    z-index: 30;
+    transition: transform 250ms;
+}
+
+.sticky:hover {
+    transform: translateY(-10px);
 }
 
 .content,
 .villa-content {
     left: 50%;
     transform: translate(-50%, -50%)
-}
-
-.sticky:hover {
-    animation: 1s bounce
 }
 
 .iframe-container {
@@ -422,7 +432,7 @@ video {
     margin-top: -46px;
     margin-left: 70px;
     width: 90px;
-    height: 80px
+    height: 80px;
 }
 
 .titulo-banner {
@@ -661,7 +671,7 @@ input::placeholder {
 }
 
 .quien-banner {
-    background-image: url("../img/villa-de-leyva/paula-prieto-jJT8x2T8NHo-unsplash.jpg");
+    background-image: url("../img/villa-de-leyva/villa-normal-min.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -721,7 +731,7 @@ input::placeholder {
 }
 
 .footer-socials {
-    margin: 50px
+    margin: 50px;
 }
 
 .footer-socials img {
@@ -729,11 +739,12 @@ input::placeholder {
     height: 2%;
     margin: 5px;
     cursor: pointer;
-    filter: invert(95%) sepia(5%) saturate(0%) hue-rotate(76deg) brightness(105%) contrast(107%)
+    transition: transform 250ms;
+    filter: invert(100%) sepia(53%) saturate(2%) hue-rotate(308deg) brightness(106%) contrast(100%);
 }
 
 .footer-socials img:hover {
-    animation: 1s headShake
+    transform: translateY(-10px);
 }
 
 @media only screen and (min-width:2500px) {
