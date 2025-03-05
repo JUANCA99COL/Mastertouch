@@ -625,6 +625,22 @@ input::placeholder {
     color: #000
 }
 
+.btn-detalles-contact {
+    width: 150px;
+    height: 40px;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: #f46434;
+    color: #fff;
+}
+
+.btn-detalles-contact:hover {
+    opacity: 0.5;
+}
+
 .btn-detalles {
     background-color: #f46434;
     border: 1px solid #f46434;
