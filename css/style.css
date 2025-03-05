@@ -476,6 +476,10 @@ video {
     background-image: url("../img/banners/contact-mask.png")
 }
 
+textarea {
+    height: 140px;
+}
+
 .content {
     position: absolute;
     top: 58%
