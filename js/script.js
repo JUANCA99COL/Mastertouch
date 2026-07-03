@@ -1,70 +1,70 @@
-// looping events in input while user searches 
-const search = () => {
-  const searchbox = document.getElementById("search-item").value.toUpperCase();
-  const eventitems = document.getElementById("event-list")
-  const event = document.querySelectorAll(".event")
-  const ename = eventitems.getElementsByTagName("h3")
+// jquery functions
+$(document).ready(function () {
+  $(".menu-icon").on("click", function () {
+    $(".sec-nav").toggleClass("open");
+    $(this).toggleClass("fa-bars fa-xmark");
+  });
 
-  for(var i = 0; i < ename.length; i++) {
-    let match = event[i].getElementsByTagName('h3')[0];
-
-    if (match) {
-      let textvalue = match.textContent || match.innerHTML
-
-      if (textvalue.toUpperCase().indexOf(searchbox) > -1) {
-        event[i].style.display = "";
-      } else {
-        event[i].style.display = "none";        
-      }
-    }
-  }
-} 
-
-// jquery functions 
-$(".sec-nav").hide();
-$( document ).ready(function() {
-$(".menu-icon").click(function(){
-    $(".sec-nav").slideToggle();
-});
+  $(".sec-nav a").on("click", function () {
+    $(".sec-nav").removeClass("open");
+    $(".menu-icon").removeClass("fa-xmark").addClass("fa-bars");
+  });
 });
 
-// hiding content before typing
-$(".search").on('keyup', function() {
-  var searchValue = $(this).val();
-  searchAndFilter(searchValue)
-});
-
-function searchAndFilter(searchTerm) {
-  if (searchTerm == '') {
-    $("#event-list").hide()
-  } else {
-    $("#event-list").each(function() {
-      var currentText = $(this).text();
-      currentText = currentText.toUpperCase();
-      searchTerm = searchTerm.toUpperCase();
-      if (currentText.indexOf(searchTerm) >= 0) {
-        $(this).show();
-      }
-    });
-  }
-}
-
-$(document).ready(function() {
-  $("#event-list").hide();
-});
-
-// navbar bg change when scrolling 
+// navbar bg change when scrolling
 $(document).ready(function(){
   $(window).scroll(function(){
       if($(window).scrollTop() > 100){
-          $(".home-nav").css({"background-color":"black", "opacity":"95%"});   
+          $(".home-nav").addClass("scrolled");
       }
       else{
-          $(".home-nav").css({"background-color":""});
+          $(".home-nav").removeClass("scrolled");
       }
 
   })
 })
+
+// hero heading word-by-word reveal
+document.addEventListener("DOMContentLoaded", function () {
+  var heroHeading = document.querySelector(".js-hero-heading");
+  if (heroHeading) {
+    var words = heroHeading.textContent.trim().split(/\s+/);
+    heroHeading.innerHTML = words
+      .map(function (word) {
+        return '<span class="hero-word">' + word + "</span>";
+      })
+      .join(" ");
+    var spans = heroHeading.querySelectorAll(".hero-word");
+    spans.forEach(function (span, i) {
+      setTimeout(function () {
+        span.classList.add("in-view");
+      }, 200 + i * 120);
+    });
+  }
+
+  // faq accordion
+  document.querySelectorAll(".faq-item").forEach(function (item) {
+    var head = item.querySelector(".faq-item__head");
+    var body = item.querySelector(".faq-item__body");
+    if (!head || !body) return;
+    head.addEventListener("click", function () {
+      var isOpen = item.classList.contains("open");
+      document.querySelectorAll(".faq-item.open").forEach(function (openItem) {
+        if (openItem !== item) {
+          openItem.classList.remove("open");
+          openItem.querySelector(".faq-item__body").style.maxHeight = null;
+        }
+      });
+      if (isOpen) {
+        item.classList.remove("open");
+        body.style.maxHeight = null;
+      } else {
+        item.classList.add("open");
+        body.style.maxHeight = body.scrollHeight + "px";
+      }
+    });
+  });
+});
 
 // Two images side by side
 function two() {
@@ -74,10 +74,20 @@ function two() {
   }
 }
 
-// aos animations 
+// aos animations
 AOS.init({
   delay: 200, // values from 0 to 3000, with step 50ms
   duration: 1500, // values from 0 to 3000, with step 50ms
   once: false, // whether animation should happen only once - while scrolling down
   mirror: false, // whether elements should animate out while scrolling past them
 });
+
+// re-check aos when landing directly on a hash (e.g. nav link jump) so the
+// target section isn't stuck invisible before the user scrolls again
+if (window.location.hash) {
+  window.addEventListener("load", function () {
+    setTimeout(function () {
+      AOS.refreshHard();
+    }, 300);
+  });
+}
