@@ -115,6 +115,11 @@ video {
     position: relative
 }
 
+#alianzas img {
+    border-radius: 20px;
+    cursor: pointer;
+}
+
 #hero,
 #hero video {
     height: 100vh;
@@ -1674,7 +1679,11 @@ input::placeholder {
 @media only screen and (max-width: 675px) {
     #eventos { padding: 80px 3%; }
     #alianzas { padding: 80px 3% !important; }
-    #alianzas img { margin-top: 2rem !important; width: 240PX; }
+    #alianzas img { 
+        margin-top: 2rem !important; 
+        width: 280PX; 
+        border-radius: 15px;
+    }
     .event-card-v2__body h2 { font-size: 1.5rem; }
     .servicios-v2, .faq-v2 { padding: 80px 6%; }
     .bottom-cta-v2 { padding: 100px 6%; }
