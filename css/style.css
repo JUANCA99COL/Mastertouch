@@ -143,7 +143,7 @@ video {
 .img-huila,
 .img-thumbnail {
     margin-bottom: 20px;
-    transition: 1s;
+    transition: transform .4s cubic-bezier(.215,.61,.355,1);
     cursor: pointer
 }
 
@@ -396,7 +396,7 @@ video {
 }
 
 .column img {
-    transition: 1s;
+    transition: transform .4s cubic-bezier(.215,.61,.355,1);
     cursor: pointer;
     margin-top: 8px;
     vertical-align: middle;
@@ -432,9 +432,8 @@ video {
     list-style: none;
     padding: 15px;
     display: inline-block;
-    /* margin-top: 15px; */
     margin-top: 5px;
-    margin-right: 20px
+    margin-right: 20px;
 }
 
 .menu-position {
@@ -501,7 +500,7 @@ video {
     outline: 0;
     border: 2px solid #fff;
     padding: 10px;
-    transition: 1s;
+    transition: transform .4s cubic-bezier(.215,.61,.355,1);
     opacity: .9
 }
 
@@ -991,7 +990,7 @@ input::placeholder {
 }
 
 @media only screen and (max-width:1290px) {
-    .li-abt {
+    .home-nav li.li-abt {
         display: none;
         visibility: hidden
     }
@@ -1001,8 +1000,45 @@ input::placeholder {
         display: block
     }
 
+    .home-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .home-nav ul.p-2 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .home-nav ul.p-2 li {
+        padding: 0;
+        margin: 0;
+    }
+
     .logo {
-        margin-left: -12px;
+        margin: 0;
+        width: 70px;
+        height: 62px;
+    }
+
+    .second-ul {
+        float: none;
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-position {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-icon {
+        position: static;
+        margin: 0;
+        padding: 0;
     }
 }
 
@@ -1138,15 +1174,6 @@ input::placeholder {
 @media only screen and (max-width:480px) {
     h1 {
         font-size: 40px;
-    }
-
-    .menu-icon {
-        position: absolute;
-        top: 10%;
-    }
-
-    .logo {
-        width: 80px
     }
 
     .btn-detalles2,.btn-detalles,.btn-detalles-contact {
