@@ -121,6 +121,10 @@ video {
     width: 100%
 }
 
+#eventos {
+    padding: 110px 8%;
+}
+
 .button-banner:hover,
 .column img:hover,
 .img-huila:hover,
@@ -134,7 +138,6 @@ video {
     color: white;
 }
 
-#eventos,
 #gallery,
 .galleria-fotos {
     margin: 10%
@@ -1669,6 +1672,9 @@ input::placeholder {
 }
 
 @media only screen and (max-width: 675px) {
+    #eventos { padding: 80px 3%; }
+    #alianzas { padding: 80px 3% !important; }
+    #alianzas img { margin-top: 2rem !important; width: 240PX; }
     .event-card-v2__body h2 { font-size: 1.5rem; }
     .servicios-v2, .faq-v2 { padding: 80px 6%; }
     .bottom-cta-v2 { padding: 100px 6%; }
