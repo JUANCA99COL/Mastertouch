@@ -785,11 +785,18 @@ input::placeholder {
     transition: background-color .45s cubic-bezier(.215,.61,.355,1), transform .3s ease, box-shadow .3s ease;
 }
 
-.btn-detalles:hover,
+.btn-detalles:hover {
+    background-color: #c3502a;
+    color: #fff;
+    border: 1px solid #c3502a;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 24px 0 rgba(244,100,52,0.3);
+}
+
 .btn-detalles2:hover {
-    background-color: #fff;
-    color: #f46434;
-    border: 1px solid #f46434;
+    background-color: #c3502a;
+    color: #fff;
+    border: 1px solid #c3502a;
     transform: translateY(-3px);
     box-shadow: 0 12px 24px 0 rgba(244,100,52,0.3);
 }
@@ -1321,6 +1328,7 @@ input::placeholder {
 
 .btn-ghost {
     background-color: transparent !important;
+    color: #f46434;
 }
 
 .hero-scroll-cue {
