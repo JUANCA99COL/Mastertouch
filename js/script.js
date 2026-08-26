@@ -42,6 +42,20 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  // newsletter form -> whatsapp (no email backend configured)
+  var newsletterForm = document.getElementById("newsletter-form");
+  if (newsletterForm) {
+    newsletterForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var email = document.getElementById("newsletter-email").value.trim();
+      var text = encodeURIComponent(
+        "Hola! Quiero suscribirme a las novedades de Mastertouch. Mi correo es: " + email
+      );
+      window.open("https://api.whatsapp.com/send?phone=573239608399&text=" + text, "_blank");
+      newsletterForm.reset();
+    });
+  }
+
   // faq accordion
   document.querySelectorAll(".faq-item").forEach(function (item) {
     var head = item.querySelector(".faq-item__head");
